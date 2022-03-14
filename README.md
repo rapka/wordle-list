@@ -32,6 +32,7 @@ These games don't behave like traditional Wordle at all.
 | Variant name | Description | Link
 | ------------ | ----------- | ---- |
 | Squardle | 2D Wordle in a crossword configuration | [PLAY](https://fubargames.se/squardle/) |
+| Heardle | Guess the song based on audio snippets | [PLAY](https://www.heardle.app/) |
 
 ## Semantic Wordle
 
