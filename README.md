@@ -8,7 +8,6 @@ A handy compilation of Wordle variants. Feel free to open an issue with bugs or 
 These games follow the original Wordle rules but add additional words to guess.
 | Variant name | Description | Link
 | ------------ | ----------- | ---- |
-
 | Wordle | Original Formula (New York Times owned) | [PLAY](https://www.nytimes.com/games/wordle/index.html) |
 | Dordle | 2X Wordle | [PLAY](https://zaratustra.itch.io/dordle) |
 | Quordle | 4X Wordle | [PLAY](https://www.quordle.com/) |
