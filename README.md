@@ -58,6 +58,7 @@ These games don't follow traditional Wordle rules.
 | Mathler | Guess the math equation that matches the number | [PLAY](https://www.mathler.com/) |
 | Primel | Solutions are 5 digit prime numbers | [PLAY](https://converged.yt/primel/) |
 | Squardle | 2D Wordle in a crossword configuration | [PLAY](https://fubargames.se/squardle/) |
+| Waffle | Swap letters in a crossword configuration | [PLAY](https://wafflegame.net/) |
 | Absurdle | Secret word changes to avoid your guesses | [PLAY](https://qntm.org/files/absurdle/absurdle.html) |
 | Crosswordle | Reverse engineer the guess from the final word | [PLAY](https://crosswordle.vercel.app/) |
 | Heardle | Guess the song based on audio snippets | [PLAY](https://www.heardle.app/) |
