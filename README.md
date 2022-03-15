@@ -15,7 +15,7 @@ These games follow the original Wordle rules but add additional words to guess.
 | Octordle | 8X Wordle | [PLAY](https://octordle.com/) |
 | Sedecorlde | 16X Wordle | [PLAY](http://www.sedecordle.com/) |
 | Sedordle | 16X Wordle (alternate version) | [PLAY](https://sedordle.com/) |
-| Kilordle | 1000X Wordle [PLAY](https://jonesnxt.github.io/kilordle/) |
+| Kilordle | 1000X Wordle | [PLAY](https://jonesnxt.github.io/kilordle/) |
 | Polydle | Customizable number of words | [PLAY](https://polydle.github.io/) |
 
 
