@@ -18,11 +18,12 @@ These games follow the original Wordle rules but add additional words to guess.
 
 ## Nonstandard Wordle Variants
 
-These variants follow normal Wordle rules but use a different dictionary.
+These variants follow normal Wordle rules but use a different word list.
 
 | Variant name | Description | Link
 | ------------ | ----------- | ---- |
 | Canuckle | Canadian themed words | [PLAY](https://canucklegame.github.io/canuckle/) |
+| Lewdle | Lewd words (NSFW) | [PLAY](https://www.lewdlegame.com/) |
 | Sweardle | Four letter swear words (NSFW) | [PLAY](https://sweardle.com/) |
 
 ## Nonstandard Wordle Variants
@@ -33,6 +34,8 @@ These games don't behave like traditional Wordle at all.
 | ------------ | ----------- | ---- |
 | Squardle | 2D Wordle in a crossword configuration | [PLAY](https://fubargames.se/squardle/) |
 | Heardle | Guess the song based on audio snippets | [PLAY](https://www.heardle.app/) |
+| Worldle | Guess the country based on its outline | [PLAY](https://worldle.teuteuf.fr/) |
+| Globle | Guess the country based on distance from other countries | [PLAY](https://globle-game.com/) |
 
 ## Semantic Wordle
 
