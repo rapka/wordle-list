@@ -61,7 +61,7 @@ body {
 	font-family: 'Outfit';
 	font-style: normal;
 	font-weight: normal;
-	src: url('/outfit.woff2') format('woff2');
+	src: url('/public/outfit.woff2') format('woff2');
 }
 
 .wordleList {

@@ -15,7 +15,7 @@ These games follow the original Wordle rules but add additional words to guess.
 | Octordle | 8x Wordle | [PLAY](https://octordle.com/) | 
 | Sedecordle | 16x Wordle | [PLAY](http://www.sedecordle.com/) | 
 | Sedordle | 16x Wordle (alternate version) | [PLAY](https://sedordle.com/) | 
-| Kilordle |  1000x Wordle | [PLAY](1000x Wordle) | 
+| Kilordle | 1000x Wordle | [PLAY](https://jonesnxt.github.io/kilordle/) | 
 
 ## Nonstandard Dictionary Variants
 
@@ -59,7 +59,7 @@ These games don't follow traditional Wordle rules.
 | Waffle | Swap letters in a crossword configuration | [PLAY](https://wafflegame.net/) | 
 | Absurdle | Secret word changes to avoid your guesses | [PLAY](https://qntm.org/files/absurdle/absurdle.html) | 
 | Crosswordle | Reverse engineer the guess from the final word | [PLAY](https://crosswordle.vercel.app/) | 
-| Heardle | uess the song based on audio snippets | [PLAY](https://www.heardle.app/) | 
+| Heardle | Guess the song based on audio snippets | [PLAY](https://www.heardle.app/) | 
 | Worldle | Guess the country based on its outline | [PLAY](https://worldle.teuteuf.fr/) | 
 | Globle | Guess the country based on distance from other countries | [PLAY](https://globle-game.com/) | 
 | Flaggle | Guess the flag based on matching colors | [PLAY](https://ducc.pythonanywhere.com/flaggle/) | 

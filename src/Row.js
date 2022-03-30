@@ -4,7 +4,6 @@ import { useDrag, useDrop } from 'react-dnd';
 import FavoriteButton from './FavoriteButton';
 
 import DragIcon from './img/drag.svg';
-import Outfit from './outfit.woff2';
 
 import './Row.css';
 
