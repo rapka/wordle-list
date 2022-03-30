@@ -1,0 +1,264 @@
+[
+	{
+		"title": "Wordle",
+		"description": "Original Formula (New York Times owned)",
+		"url": "https://www.nytimes.com/games/wordle/index.html",
+		"type": "standard"
+	},
+	{
+		"title": "Dordle",
+		"description": "2x Wordle",
+		"url": "https://zaratustra.itch.io/dordle",
+		"type": "standard"
+	},
+	{
+		"title": "Quordle",
+		"description": "4x Wordle",
+		"url": "https://www.quordle.com/",
+		"type": "standard"
+	},
+	{
+		"title": "Octordle",
+		"description": "8x Wordle",
+		"url": "https://octordle.com/",
+		"type": "standard"
+	},
+	{
+		"title": "Sedecordle",
+		"description": "16x Wordle",
+		"url": "http://www.sedecordle.com/",
+		"type": "standard"
+	},
+	{
+		"title": "Sedordle",
+		"description": "16x Wordle (alternate version)",
+		"url": "https://sedordle.com/",
+		"type": "standard"
+	},
+	{
+		"title": "Kilordle",
+		"description": "1000x Wordle",
+		"url": "https://jonesnxt.github.io/kilordle/",
+		"type": "standard"
+	},
+	{
+		"title": "Queerdle",
+		"description": "Queer themed words **(NSFW)**",
+		"url": "https://queerdle.com/",
+		"type": "newDictionary"
+	},
+	{
+		"title": "QWRTL",
+		"description": "No E's allowed",
+		"url": "https://limpet.net/qwrtl",
+		"type": "newDictionary"
+	},
+	{
+		"title": "Foodle",
+		"description": "Food related words",
+		"url": "https://food-le.co/",
+		"type": "newDictionary"
+	},{
+		"title": "Pawrdle",
+		"description": "Pet related words",
+		"url": "https://www.pawrdle.com/",
+		"type": "newDictionary"
+	},{
+		"title": "Canuckle",
+		"description": "Canada-themed words",
+		"url": "https://canucklegame.github.io/canuckle/",
+		"type": "newDictionary"
+	},{
+		"title": "Gordle",
+		"description": "Hockey themed words",
+		"url": "https://gordle.herokuapp.com/",
+		"type": "newDictionary"
+	},{
+		"title": "Lewdle",
+		"description": "Lewd words **(NSFW)** ",
+		"url": "https://www.lewdlegame.com/",
+		"type": "newDictionary"
+	},{
+		"title": "Sweardle",
+		"description": "Four letter swear words **(NSFW)**",
+		"url": "Guess commonly used passwords",
+		"type": "newDictionary"
+	},{
+		"title": "Passwordle",
+		"description": "Guess commonly used passwords",
+		"url": "https://sweardle.com/",
+		"type": "newDictionary"
+	},{
+		"title": "Airportle",
+		"description": "Guess the airport by the IATA code",
+		"url": "https://airportle.scottscheapflights.com/",
+		"type": "newDictionary"
+	},{
+		"title": "Scholardle",
+		"description": "Science and academia jargon",
+		"url": "https://www.scholardle.com/",
+		"type": "newDictionary"
+	},
+	{
+		"title": "Bardle",
+		"description": "Shakespearean terminology",
+		"url": "https://shakespearegeek.github.io/bardle/",
+		"type": "newDictionary"
+	},
+	{
+		"title": "BRDL",
+		"description": "Four lettter [bird banding codes](https://www.pwrc.usgs.gov/bbl/manual/speclist.cfm)",
+		"url": "https://www.pwrc.usgs.gov/bbl/manual/speclist.cfm",
+		"type": "newDictionary"
+	},
+	{
+		"title": "BTS Wordle",
+		"description": "For BTS stans",
+		"url": "https://brdl.alex.gd/",
+		"type": "newDictionary"
+	},
+	{
+		"title": "Taylordle",
+		"description": "For Taylor Swift stans",
+		"url": "https://www.taylordle.com/",
+		"type": "newDictionary"
+	},
+	{
+		"title": "Lordle of the Rings",
+		"description": "For Lord of the Rings fans",
+		"url": "https://digitaltolkien.github.io/vue-wordle/",
+		"type": "newDictionary"
+	},
+	{
+		"title": "Star Wordle",
+		"description": "For Star Wars fans",
+		"url": "https://www.starwordle.com/",
+		"type": "newDictionary"
+	},
+	{
+		"title": "Wordle Peaks",
+		"description": "Missed letters give better hints",
+		"url": "https://vegeta897.github.io/wordle-peaks/",
+		"type": "newDictionary"
+	},
+	{
+		"title": "Survivle",
+		"description": "Avoid guessing the word",
+		"url": "https://lazyguyy.github.io/survivle/",
+		"type": "newGameplay"
+	},
+	{
+		"title": "Antiwordle",
+		"description": "Avoid guessing the word (alternate version)",
+		"url": "https://weredle.netlify.app/",
+		"type": "newGameplay"
+	},
+	{
+		"title": "Weredle",
+		"description": "One of the tiles gives bad answers for guesses",
+		"url": "https://weredle.netlify.app/",
+		"type": "newGameplay"
+	},
+	{
+		"title": "Nerdle",
+		"description": "Guess the mystery math equation",
+		"url": "https://nerdlegame.com/",
+		"type": "newGameplay"
+	},
+	{
+		"title": "Mathler",
+		"description": "Guess the math equation that matches the number",
+		"url": "https://www.mathler.com/",
+		"type": "newGameplay"
+	},
+	{
+		"title": "Primel",
+		"description": "Solutions are 5 digit prime numbers",
+		"url": "https://converged.yt/primel/",
+		"type": "newGameplay"
+	},
+	{
+		"title": "Squardle",
+		"description": "Squardle | 2D Wordle in a crossword configuration",
+		"url": "https://fubargames.se/squardle/",
+		"type": "newGameplay"
+	},
+	{
+		"title": "Waffle",
+		"description": "Swap letters in a crossword configuration",
+		"url": "https://wafflegame.net/",
+		"type": "newGameplay"
+	},
+	{
+		"title": "Absurdle",
+		"description": "Secret word changes to avoid your guesses",
+		"url": "https://qntm.org/files/absurdle/absurdle.html",
+		"type": "newGameplay"
+	},
+	{
+		"title": "Crosswordle",
+		"description": "Reverse engineer the guess from the final word",
+		"url": "https://crosswordle.vercel.app/",
+		"type": "newGameplay"
+	},
+	{
+		"title": "Heardle",
+		"description": "Guess the song based on audio snippets",
+		"url": "https://www.heardle.app/",
+		"type": "newGameplay"
+	},
+	{
+		"title": "Worldle",
+		"description": "Guess the country based on its outline",
+		"url": "https://worldle.teuteuf.fr/",
+		"type": "newGameplay"
+	},
+	{
+		"title": "Globle",
+		"description": "Guess the country based on distance from other countries",
+		"url": "https://globle-game.com/",
+		"type": "newGameplay"
+	},
+	{
+		"title": "Flaggle",
+		"description": "Guess the flag based on matching colors",
+		"url": "https://ducc.pythonanywhere.com/flaggle/",
+		"type": "newGameplay"
+	},
+	{
+		"title": "Who Are Ya?",
+		"description": "Guess the European football player",
+		"url": "https://missing11.com/who-are-ya/",
+		"type": "newGameplay"
+	},
+	{
+		"title": "POELTL",
+		"description": "Guess the NBA player",
+		"url": "https://poeltl.dunk.town/",
+		"type": "newGameplay"
+	},
+	{
+		"title": "Subwaydle",
+		"description": "Guess the NYC Subway trip",
+		"url": "https://www.subwaydle.com/",
+		"type": "newGameplay"
+	},
+	{
+		"title": "Squirdle",
+		"description": "Guess the Pokemon based on attributes",
+		"url": "https://squirdle.fireblend.com/",
+		"type": "newGameplay"
+	},
+	{
+		"title": "Semantle",
+		"description": "Original Semantic Wordle",
+		"url": "https://semantle.novalis.org/",
+		"type": "semantic"
+	},
+	{
+		"title": "Pimantle",
+		"description": "Semantle with guess visualization tools",
+		"url": "https://semantle.pimanrul.es/",
+		"type": "semantic"
+	}
+]

@@ -1,6 +1,6 @@
 # wordle-list
 
-A handy compilation of games based on Josh Wardle's Wordle. Feel free to open an issue with bugs or suggestions! See CONTRIBUTING.md for more details.
+A handy compilation of games based on Josh Wardle's Wordle. Feel free to open an issue with bugs or suggestions! See CONTRIB
 
 
 ## Normal Wordle Variants
@@ -29,7 +29,7 @@ These variants follow normal Wordle rules but use a different word list.
 | Pawrdle | Pet related words | [PLAY](https://www.pawrdle.com/) | 
 | Canuckle | Canada-themed words | [PLAY](https://canucklegame.github.io/canuckle/) | 
 | Gordle | Hockey themed words | [PLAY](https://gordle.herokuapp.com/) | 
-| Lewdle | Lewd words **(NSFW)**  | [PLAY](https://www.lewdlegame.com/) | 
+| Lewdle | Lewd words **(NSFW)**  | [PLAY]() | 
 | Sweardle | Four letter swear words **(NSFW)** | [PLAY](Guess commonly used passwords) | 
 | Passwordle | Guess commonly used passwords | [PLAY](https://sweardle.com/) | 
 | Airportle | Guess the airport by the IATA code | [PLAY](https://airportle.scottscheapflights.com/) | 
@@ -37,10 +37,28 @@ These variants follow normal Wordle rules but use a different word list.
 | Bardle | Shakespearean terminology | [PLAY](https://shakespearegeek.github.io/bardle/) | 
 | BRDL | Four lettter [bird banding codes](https://www.pwrc.usgs.gov/bbl/manual/speclist.cfm) | [PLAY](https://www.pwrc.usgs.gov/bbl/manual/speclist.cfm) | 
 | BTS Wordle | For BTS stans | [PLAY](https://brdl.alex.gd/) | 
-| Taylordle | For Taylor Swift stans | [PLAY](https://www.taylordle.com/) | 
-| Lordle of the Rings | For Lord of the Rings fans | [PLAY](https://digitaltolkien.github.io/vue-wordle/) | 
-| Star Wordle | For Star Wars fans | [PLAY](https://www.starwordle.com/) | 
+| Taylordle |  | [PLAY](https://www.taylordle.com/) | 
+| Lordle of the Rings |  | [PLAY](https://digitaltolkien.github.io/vue-wordle/) | 
+| Star Wordle |  | [PLAY](https://www.starwordle.com/) | 
 | Wordle Peaks | Missed letters give better hints | [PLAY](https://vegeta897.github.io/wordle-peaks/) | 
+| Queerdle | Queer themed words **(NSFW)** | [PLAY](https://queerdle.com/) |
+| QWRTL | No "E"s allowed | [PLAY](https://limpet.net/qwrtl/) |
+| Foodle | Food related words | [PLAY](https://food-le.co/) |
+| Pawrdle | Pet related words | [PLAY](https://www.pawrdle.com/) |
+| Canuckle | Canada-themed words | [PLAY](https://canucklegame.github.io/canuckle/) |
+| Gordle | Hockey themed words | [PLAY](https://gordle.herokuapp.com/) |
+| Lewdle | Lewd words **(NSFW)** | [PLAY](https://www.lewdlegame.com/) |
+| Sweardle | Four letter swear words **(NSFW)** | [PLAY](https://sweardle.com/) |
+| Passwordle | Guess commonly used passwords | [PLAY](https://passwordle.sp8c3.com/) |
+| Airportle | Guess the airport by the IATA code | [PLAY](https://airportle.scottscheapflights.com/) |
+| Scholardle | Science and academia jargon | [PLAY](https://www.scholardle.com/) |
+| Bardle | Shakespearean terminology | [PLAY](https://shakespearegeek.github.io/bardle/) |
+| BRDL | Four lettter [bird banding codes](https://www.pwrc.usgs.gov/bbl/manual/speclist.cfm) | [PLAY](https://brdl.alex.gd/) |
+| BTS Wordle | For BTS stans | [PLAY](https://bts-wordle.vercel.app/) |
+| Taylordle | For Taylor Swift stans | [PLAY](https://www.taylordle.com/) |
+| Lordle of the Rings | For Lord of the Rings fans | [PLAY]() |
+| Star Wordle | For Star Wars fans | [PLAY](https://www.starwordle.com/) |
+
 
 ## Nonstandard Gameplay Variants
 

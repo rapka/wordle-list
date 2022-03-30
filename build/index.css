@@ -1,0 +1,250 @@
+.wordleHeader-titleRow {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+
+.wordleHeader-titleRow svg {
+	display: block;
+	position: absolute;
+	right:  8px;
+}
+
+.wordleHeader {
+	color: var(--foreground);
+}
+
+.wordleHeader-title {
+	font-size: 2.5rem;
+	flex-grow: 1;
+}
+
+.wordleHeader-desc {
+	font-size: 1.5rem;
+	text-align: center;
+	width: 100%;
+}
+.favButton {
+	margin-left: 8px;
+	flex-grow: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+	.wordleList-row {
+		background-color: var(--color-tone-1);
+		color: var(--color-tone-4);
+	}
+}
+
+/* Allow tiles to be smaller on small screens */
+@media (max-height: 600px) {
+  .wordleList-row {
+    font-size: 1em;
+    line-height: 1em;
+  }
+}
+
+.wordleList-row {
+	transition: transform 0.5s ease-in-out;
+	flex-direction: row;
+	background-color: var(--color-tone-2);
+	color: var(--tile-text-color);
+	font-size: 2rem;
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+	line-height: 3.5rem;
+	font-weight: bold;
+	vertical-align: middle;
+	box-sizing: border-box;
+	border-width: 3px 0 3px 0;
+	border-style: solid;
+	border-color: var(--color-tone-4);
+	/*margin: 8px;*/
+}
+
+.wordleList-row.fav {
+	cursor: drag;
+}
+
+.wordleList-row:not(:last-child) {
+	border-bottom-width: 0;
+}
+
+.wordleList-row a {
+	color: var(--darkendGreen);
+}
+
+.wordleList-row a:visited {
+	color: var(--green);
+}
+
+.wordleList-row svg path {
+	fill: var(--tile-text-color);
+}
+
+.wordleList-rowTitle {
+	margin-left: 8px;
+	flex: 2;
+	flex-grow: 1;
+}
+
+.wordleList-rowDesc {
+	font-size: 1.75rem;
+	flex: 5;
+	flex-grow: 2;
+}
+
+.wordleList-playButton {
+	text-decoration: none;
+	color: var(--darkendGreen);
+	margin-right: 8px;
+	flex: 1;
+	flex-grow: 0;
+}
+
+.wordleList-playButton:visited {
+	color: var(--yellow) !important;
+}
+
+.wordleList-dragButton {
+	cursor: -webkit-grab;
+	cursor: grab;
+	display: flex;
+}
+
+.favComponents, .nonFavComponents {
+	justify-content: center;
+	border-radius: 8px;
+	padding: 8px 0;
+	overflow: hidden;
+}
+
+.favComponents {
+		background-color: var(--color-tone-2);
+		margin-bottom: 8px;
+
+}
+
+.nonFavComponents {
+		background-color: var(--color-tone-3	);
+}
+
+.wordleList-favHeader {
+	width: 100%;
+	text-align: center;
+	font-size: 2rem;
+}
+:root {
+	--wordle-yellow: rgb(255, 204, 0);
+	--worlde-green: rgb(0, 204, 136);
+	--wordle-black: rgb(24, 26, 27);
+
+	--color-tone-1: #000000;
+	--color-tone-2: #787c7e;
+	--color-tone-3: #878a8c;
+	--color-tone-4: #d3d6da;
+	--color-tone-5: #edeff1;
+	--color-tone-6: #f6f7f8;
+	--color-tone-7: #ffffff;
+	--green: #6aaa64;
+	--darkendGreen: #538d4e;
+	--yellow: #c9b458;
+	--darkendYellow: #b59f3b;
+	--lightGray: #d8d8d8;
+	--gray: #86888a;
+	--darkGray: #939598;
+	--white: #fff;
+	--black: #212121;
+	--orange: #f5793a;
+	--blue: #85c0f9;
+
+	--text-color:  var(--color-tone-1);
+	--tile-text-color:  var(--color-tone-7);
+	--background2: var(--color-tone-6);
+	--background:  var(--color-tone-7);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+	--color-tone-1: #ffffff;
+	--color-tone-2: #818384;
+	--color-tone-3: #565758;
+	--color-tone-4: #3a3a3c;
+	--color-tone-5: #272729;
+	--color-tone-6: #1a1a1b;
+	--color-tone-7: #121213;
+	--tile-text-color: var(--color-tone-1);
+	}
+}
+
+body {
+	margin: 0;
+}
+
+.f-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.f-col {
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+@font-face {
+	font-family: 'Outfit';
+	font-style: normal;
+	font-weight: normal;
+	src: url('/outfit.woff2') format('woff2');
+}
+
+.wordleList {
+	font-family: 'Outfit';
+	background-color: var(--background);
+	width: 100vw;
+}
+
+.wordleList-playButton:visited {
+	color: var(--yellow) !important;
+}
+
+.wordleList-iframe {
+	position: fixed;
+	height: calc(100vh - 100px);
+	bottom: 0;
+	left: 0;
+	width: 100vw;
+	border: none;
+	background-color: var(--color-tone-1);
+}
+
+.favComponents, .nonFavComponents {
+	justify-content: center;
+	border-radius: 8px;
+	padding: 8px 0;
+	overflow: hidden;
+}
+
+.favComponents {
+		background-color: var(--background2);
+		margin-bottom: 8px;
+		color: var(--darkendGreen);
+		border-color: var(--darkendGreen);
+		border-width: 1px;
+}
+
+.nonFavComponents {
+		background-color: var(--background2);
+}
+
+.wordleList-favHeader {
+	width: 100%;
+	text-align: center;
+	font-size: 2rem;
+	color: var(--darkendGreen);
+}
