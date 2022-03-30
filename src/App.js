@@ -11,8 +11,6 @@ import Header from './Header';
 
 import Row from './Row';
 
-import Outfit from './outfit.woff2';
-
 import './App.css';
 
 const MINUTE = 1000 * 60 * 60;

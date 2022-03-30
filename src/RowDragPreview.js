@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import FavoriteButton from './FavoriteButton';
 
 import dragIcon from './img/drag.svg';
-import Outfit from './outfit.woff2';
 
 import './Row.css';
 
