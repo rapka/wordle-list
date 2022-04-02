@@ -15,7 +15,7 @@ const RowDragPreview = ({ game, favorites, lastPlay }) => {
   const ready = lastPlay - HOUR * 24;
 
   return (
-    <div className="wordleList-row">
+    <div className="wordleList-row .preview">
       <div className="wordleList-dragButton" ><img src={drag} /></div>
       <FavoriteButton toggled={faved} onClick={toggleFav} />
       <div className="wordleList-rowTitle">{game.title}</div>

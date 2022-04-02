@@ -13,7 +13,7 @@
 }
 
 .wordleHeader {
-	color: var(--foreground);
+	color: var(--text-color);
 }
 
 .wordleHeader-title {
@@ -29,7 +29,36 @@
 .favButton {
 	margin-left: 8px;
 	flex-grow: 0;
+	display: flex;
 }
+
+.heartIcon {
+	width: 38px;
+	cursor: pointer;
+}
+
+.heartIcon.filled .heart_svg__heart-body {
+	cursor: pointer;
+	fill: var(--tile-text-color);
+}
+
+.heartIcon:hover > .heart_svg__heart-body {
+	fill: var(--tile-text-color);
+}
+
+.heartIcon.filled:hover > .heart_svg__heart-body {
+	fill: var(--color-tone-2);
+}
+
+.favButton .heart_svg__heart-outline {
+	fill: var(--tile-text-color);
+}
+
+.favButton .heart_svg__heart-body {
+	fill: var(--color-tone-2);
+	transition: fill 100ms linear;
+}
+
 
 @media (prefers-color-scheme: dark) {
 	.wordleList-row {
@@ -65,6 +94,10 @@
 	/*margin: 8px;*/
 }
 
+.wordleList-row.preview {
+	border: 0 !important;
+}
+
 .wordleList-row.fav {
 	cursor: drag;
 }
@@ -97,16 +130,21 @@
 	flex-grow: 2;
 }
 
-.wordleList-playButton {
+a.wordleList-playButton  {
 	text-decoration: none;
-	color: var(--darkendGreen);
-	margin-right: 8px;
+	color: var(--tile-text-color);
+	background-color: var(--darkendGreen);
+	margin: 6px 8px;
+	border-radius: 4px;
+  padding: 0 8px;
 	flex: 1;
 	flex-grow: 0;
+	border-radius: 4px;
 }
 
-.wordleList-playButton:visited {
-	color: var(--yellow) !important;
+a.wordleList-playButton:visited {
+	color: var(--tile-text-color)!important;
+	background-color: var(--yellow) !important;
 }
 
 .wordleList-dragButton {
@@ -207,24 +245,10 @@ body {
 	width: 100vw;
 }
 
-.wordleList-playButton:visited {
-	color: var(--yellow) !important;
-}
-
-.wordleList-iframe {
-	position: fixed;
-	height: calc(100vh - 100px);
-	bottom: 0;
-	left: 0;
-	width: 100vw;
-	border: none;
-	background-color: var(--color-tone-1);
-}
-
 .favComponents, .nonFavComponents {
 	justify-content: center;
 	border-radius: 8px;
-	padding: 8px 0;
+	padding: 8px 0 0 0;
 	overflow: hidden;
 }
 
@@ -245,4 +269,5 @@ body {
 	text-align: center;
 	font-size: 2rem;
 	color: var(--darkendGreen);
+	padding-bottom: 8px;
 }

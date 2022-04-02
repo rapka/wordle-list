@@ -12,7 +12,7 @@ function FavoriteButton({ toggled, onClick }) {
     <div className="wordleHeader">
       <div className="wordleHeader-titleRow">
 
-          <div className="wordleHeader-title">Wordle list app</div>
+          <div className="wordleHeader-title">Wordle tracker app</div>
           <Gear />
       </div>
 

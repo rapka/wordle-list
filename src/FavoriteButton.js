@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
+import HeartIcon from './img/heart.svg';
 
 import './FavoriteButton.css';
 
@@ -8,7 +9,7 @@ const markdownLinkToHref = (str) => str.replace(/\[(.*)\]\((.*)\)/, '<a href="$2
 function FavoriteButton({ toggled, onClick }) {
   return (
     <div className="favButton" onClick={onClick}>
-        {toggled ? '</3' : '<3'}
+        <HeartIcon className={`heartIcon ${toggled ? 'filled' : ''}`} />
     </div>
   );
 }

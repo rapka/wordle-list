@@ -13,7 +13,6 @@ import autoprefixer from 'autoprefixer';
 import json from '@rollup/plugin-json';
 import nodePolyfills from 'rollup-plugin-polyfill-node';
 import copy from 'rollup-plugin-copy';
-import svg from 'rollup-plugin-svg';
 import svgr from '@svgr/rollup';
 
 const plugins = [
@@ -61,7 +60,7 @@ const plugins = [
   }),
   commonjs(),
   nodePolyfills(),
-  html(),
+  html({  title: 'Wordle Bookmark App' }),
 ];
 
 if (process.env.NODE_ENV === 'development') {

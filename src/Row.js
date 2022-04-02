@@ -14,7 +14,7 @@ const markdownLinkToHref = (str) => str.replace(/\[(.*)\]\((.*)\)/, '<a href="$2
 const Row = memo(function Row({ game, onFav, onUnFav, onPlay, faved, favorites, moveRow, lastPlay }) {
   const toggleFav = () => faved ? onUnFav() : onFav();
   const id = game.title;
-  // console.log('favorites', favorites, typeof favorites)
+  console.log('favorites', lastPlay);
   const originalIndex = favorites.indexOf(id);
 
   const ready = lastPlay - HOUR * 24;
@@ -54,14 +54,13 @@ const Row = memo(function Row({ game, onFav, onUnFav, onPlay, faved, favorites, 
     opacity = isDragging ? 0 : 1;
   }
 
-
   return (
     <div className={`wordleList-row ${faved ? 'fav' : ''}`} ref={refFunc} style={{ opacity }}>
       {faved && <div className="wordleList-dragButton" ><DragIcon /></div>}
       <FavoriteButton toggled={faved} onClick={toggleFav} />
       <div className="wordleList-rowTitle">{game.title}</div>
       <div className="wordleList-rowDesc" dangerouslySetInnerHTML={{ __html: markdownLinkToHref(game.description) }} />
-      <a href={game.url} className={`wordleList-playButton ${ready ? 'ready' : ''}`}>Play</a>
+      <a href={game.url} onClick={onPlay} className={`wordleList-playButton ${ready ? 'ready' : ''}`}>Play</a>
     </div>
   );
 });
@@ -82,4 +81,5 @@ Row.propTypes = {
 Row.defaultProps = {
   favorites: [],
 }
+
 export default Row;

@@ -68,24 +68,10 @@ body {
 	width: 100vw;
 }
 
-.wordleList-playButton:visited {
-	color: var(--yellow) !important;
-}
-
-.wordleList-iframe {
-	position: fixed;
-	height: calc(100vh - 100px);
-	bottom: 0;
-	left: 0;
-	width: 100vw;
-	border: none;
-	background-color: var(--color-tone-1);
-}
-
 .favComponents, .nonFavComponents {
 	justify-content: center;
 	border-radius: 8px;
-	padding: 8px 0;
+	padding: 8px 0 0 0;
 	overflow: hidden;
 }
 
@@ -106,4 +92,5 @@ body {
 	text-align: center;
 	font-size: 2rem;
 	color: var(--darkendGreen);
+	padding-bottom: 8px;
 }

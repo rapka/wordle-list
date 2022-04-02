@@ -32,6 +32,10 @@
 	/*margin: 8px;*/
 }
 
+.wordleList-row.preview {
+	border: 0 !important;
+}
+
 .wordleList-row.fav {
 	cursor: drag;
 }
@@ -64,16 +68,21 @@
 	flex-grow: 2;
 }
 
-.wordleList-playButton {
+a.wordleList-playButton  {
 	text-decoration: none;
-	color: var(--darkendGreen);
-	margin-right: 8px;
+	color: var(--tile-text-color);
+	background-color: var(--darkendGreen);
+	margin: 6px 8px;
+	border-radius: 4px;
+  padding: 0 8px;
 	flex: 1;
 	flex-grow: 0;
+	border-radius: 4px;
 }
 
-.wordleList-playButton:visited {
-	color: var(--yellow) !important;
+a.wordleList-playButton:visited {
+	color: var(--tile-text-color)!important;
+	background-color: var(--yellow) !important;
 }
 
 .wordleList-dragButton {

@@ -13,7 +13,7 @@
 }
 
 .wordleHeader {
-	color: var(--foreground);
+	color: var(--text-color);
 }
 
 .wordleHeader-title {

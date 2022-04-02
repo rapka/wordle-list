@@ -108,7 +108,7 @@ function WordleList({ games }) {
   const favoritesList = favorites.length ? (
     <DndProvider backend={HTML5Backend} options={{ enableMouseEvents: true }}>
       <div className="favComponents f-col">
-        <div className="wordleList-favHeader">FAVORITES</div>
+        <div className="wordleList-favHeader">My Favorites</div>
         {favComponents}
       </div>
     </DndProvider>
