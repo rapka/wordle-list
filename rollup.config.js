@@ -71,7 +71,7 @@ if (process.env.NODE_ENV === 'development') {
     host: 'localhost',
     port: 4000,
   }),
-  livereload('build'),
+  livereload(),
   ]);
 } else {
   plugins.push(terser());

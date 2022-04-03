@@ -5,30 +5,32 @@ import find from 'lodash/find';
 import { DndProvider } from 'react-dnd';
 import { TouchBackend } from 'react-dnd-touch-backend';
 import { HTML5Backend } from 'react-dnd-html5-backend';
-
 import { arrayMoveImmutable } from 'array-move';
 import Header from './Header';
-
 import Row from './Row';
+import InfoModal from './InfoModal';
 
 import './App.css';
 
 const MINUTE = 1000 * 60 * 60;
 
 function WordleList({ games }) {
-
-  const [modalIsOpen, setIsOpen] = useState(false);
+  const [infoOpen, setInfoOpen] = useState(false);
+  const [optionsOpen, setOptionsOpen] = useState(false);
   const [iframeUrl, setIframeUrl] = useState('');
   const [favorites, setFavorites] = useState(JSON.parse(window.localStorage.getItem('wordleList-favorites')) || []);
   const [lastPlayed, setLastPlayed] = useState(JSON.parse(window.localStorage.getItem('wordleList-history')) || {});
   const [timestamp, setTimestamp] = useState(Date.now());
 
-  // let favorites = [];
-
  //  // Similar to componentDidMount and componentDidUpdate:
- //  useEffect(() => {
- //   favorites = ;
- // });
+  useEffect(() => {
+    document.addEventListener('keydown', function(event){
+      if(event.key === 'Escape') {
+        setInfoOpen(false);
+        setOptionsOpen(false);
+      }
+    });
+ });
 
  const ifFaved = title => favorites.includes(title);
 
@@ -116,7 +118,12 @@ function WordleList({ games }) {
 
   return (
     <div className="wordleList f-col" id="worldleList-app">
-      <Header />
+      {infoOpen && <InfoModal onClose={() => setInfoOpen(false)} />}
+      {optionsOpen && <OptionsModal onClose={() => setOptionsOpen(false)} />}
+      <Header
+        openInfo={() => setInfoOpen(true)}
+        openOptions={() => openOptions(true)}
+      />
       {favoritesList}
       <div className="nonFavComponents f-col">
         {nonFavComponents}

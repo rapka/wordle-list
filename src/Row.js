@@ -59,6 +59,7 @@ const Row = memo(function Row({ game, onFav, onUnFav, onPlay, faved, favorites, 
       {faved && <div className="wordleList-dragButton" ><DragIcon /></div>}
       <FavoriteButton toggled={faved} onClick={toggleFav} />
       <div className="wordleList-rowTitle">{game.title}</div>
+      {!ready && false && <div className="wordleList-rowTime">{game.title}</div>}
       <div className="wordleList-rowDesc" dangerouslySetInnerHTML={{ __html: markdownLinkToHref(game.description) }} />
       <a href={game.url} onClick={onPlay} className={`wordleList-playButton ${ready ? 'ready' : ''}`}>Play</a>
     </div>

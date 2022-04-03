@@ -8,12 +8,23 @@
 
 .wordleHeader-titleRow svg {
 	display: block;
-	position: absolute;
-	right:  8px;
+	width: 48px;
+	align-self: center;
+	cursor: pointer;
+	/*position: absolute;*/
 }
+/*
+.wordleHeader .gearIcon {
+	right: 8px;
+}
+
+.wordleHeader .questionIcon {
+	right: 32px;
+}*/
 
 .wordleHeader {
 	color: var(--text-color);
+	padding: 1rem 1rem 0 1rem;
 }
 
 .wordleHeader-title {
@@ -22,9 +33,10 @@
 }
 
 .wordleHeader-desc {
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 	text-align: center;
 	width: 100%;
+	padding: 0.5rem 0 1rem 0;
 }
 .favButton {
 	margin-left: 8px;
@@ -110,7 +122,7 @@
 	color: var(--darkendGreen);
 }
 
-.wordleList-row a:visited {
+.wordleList-row a:not(.wordleList-playButton):visited {
 	color: var(--green);
 }
 
@@ -142,8 +154,16 @@ a.wordleList-playButton  {
 	border-radius: 4px;
 }
 
-a.wordleList-playButton:visited {
-	color: var(--tile-text-color)!important;
+a.wordleList-playButton:hover {
+	background-color: var(--green);
+}
+
+a.wordleList-playButton.ready {
+	color: var(--tile-text-color) !important;
+	background-color: var(--darkenedYellow) !important;
+}
+
+a.wordleList-playButton.ready:hover {
 	background-color: var(--yellow) !important;
 }
 
@@ -167,12 +187,50 @@ a.wordleList-playButton:visited {
 }
 
 .nonFavComponents {
-		background-color: var(--color-tone-3	);
+		background-color: var(--color-tone-3);
 }
 
 .wordleList-favHeader {
 	width: 100%;
 	text-align: center;
+	font-size: 2rem;
+}
+.infoModal-container {
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	z-index: 10;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--background);
+	color: var(--tile-text-color);
+}
+
+.infoModal {
+	max-width: 600px;
+	/*box-shadow: 0 4px 23px 0 rgb(0 0 0 / 20%);*/
+	box-shadow: 0 4px 23px 0 rgb(255 255 255 / 20%);
+	height: 100%;
+	padding: 2rem;
+	margin: 2rem;
+	border-radius: 8px;
+}
+
+.infoModal-titleRow {
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+
+.infoModal-titleRow svg {
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 8px 8px 0 0;
+	cursor: pointer;
+}
+
+.infoModal-title {
 	font-size: 2rem;
 }
 :root {
@@ -214,6 +272,7 @@ a.wordleList-playButton:visited {
 	--color-tone-5: #272729;
 	--color-tone-6: #1a1a1b;
 	--color-tone-7: #121213;
+	--background2: #dddddd;
 	--tile-text-color: var(--color-tone-1);
 	}
 }

@@ -8,12 +8,23 @@
 
 .wordleHeader-titleRow svg {
 	display: block;
-	position: absolute;
-	right:  8px;
+	width: 48px;
+	align-self: center;
+	cursor: pointer;
+	/*position: absolute;*/
 }
+/*
+.wordleHeader .gearIcon {
+	right: 8px;
+}
+
+.wordleHeader .questionIcon {
+	right: 32px;
+}*/
 
 .wordleHeader {
 	color: var(--text-color);
+	padding: 1rem 1rem 0 1rem;
 }
 
 .wordleHeader-title {
@@ -22,7 +33,8 @@
 }
 
 .wordleHeader-desc {
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 	text-align: center;
 	width: 100%;
+	padding: 0.5rem 0 1rem 0;
 }

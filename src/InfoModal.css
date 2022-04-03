@@ -1,0 +1,38 @@
+.infoModal-container {
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	z-index: 10;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--background);
+	color: var(--tile-text-color);
+}
+
+.infoModal {
+	max-width: 600px;
+	/*box-shadow: 0 4px 23px 0 rgb(0 0 0 / 20%);*/
+	box-shadow: 0 4px 23px 0 rgb(255 255 255 / 20%);
+	height: 100%;
+	padding: 2rem;
+	margin: 2rem;
+	border-radius: 8px;
+}
+
+.infoModal-titleRow {
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+
+.infoModal-titleRow svg {
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 8px 8px 0 0;
+	cursor: pointer;
+}
+
+.infoModal-title {
+	font-size: 2rem;
+}

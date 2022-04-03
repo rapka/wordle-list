@@ -48,7 +48,7 @@
 	color: var(--darkendGreen);
 }
 
-.wordleList-row a:visited {
+.wordleList-row a:not(.wordleList-playButton):visited {
 	color: var(--green);
 }
 
@@ -80,8 +80,16 @@ a.wordleList-playButton  {
 	border-radius: 4px;
 }
 
-a.wordleList-playButton:visited {
-	color: var(--tile-text-color)!important;
+a.wordleList-playButton:hover {
+	background-color: var(--green);
+}
+
+a.wordleList-playButton.ready {
+	color: var(--tile-text-color) !important;
+	background-color: var(--darkenedYellow) !important;
+}
+
+a.wordleList-playButton.ready:hover {
 	background-color: var(--yellow) !important;
 }
 
@@ -104,7 +112,7 @@ a.wordleList-playButton:visited {
 }
 
 .nonFavComponents {
-		background-color: var(--color-tone-3	);
+		background-color: var(--color-tone-3);
 }
 
 .wordleList-favHeader {
