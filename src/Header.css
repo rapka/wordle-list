@@ -11,16 +11,7 @@
 	width: 48px;
 	align-self: center;
 	cursor: pointer;
-	/*position: absolute;*/
 }
-/*
-.wordleHeader .gearIcon {
-	right: 8px;
-}
-
-.wordleHeader .questionIcon {
-	right: 32px;
-}*/
 
 .wordleHeader {
 	color: var(--text-color);

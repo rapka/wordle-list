@@ -11,16 +11,7 @@
 	width: 48px;
 	align-self: center;
 	cursor: pointer;
-	/*position: absolute;*/
 }
-/*
-.wordleHeader .gearIcon {
-	right: 8px;
-}
-
-.wordleHeader .questionIcon {
-	right: 32px;
-}*/
 
 .wordleHeader {
 	color: var(--text-color);
@@ -103,7 +94,6 @@
 	border-width: 3px 0 3px 0;
 	border-style: solid;
 	border-color: var(--color-tone-4);
-	/*margin: 8px;*/
 }
 
 .wordleList-row.preview {
@@ -119,11 +109,11 @@
 }
 
 .wordleList-row a {
-	color: var(--darkendGreen);
+	color: var(--tile-text-color);
 }
 
 .wordleList-row a:not(.wordleList-playButton):visited {
-	color: var(--green);
+	color: var(--tile-text-color);
 }
 
 .wordleList-row svg path {
@@ -137,7 +127,7 @@
 }
 
 .wordleList-rowDesc {
-	font-size: 1.75rem;
+	font-size: 1.5rem;
 	flex: 5;
 	flex-grow: 2;
 }
@@ -277,6 +267,13 @@ a.wordleList-playButton.ready:hover {
 	}
 }
 
+@font-face {
+	font-family: 'Outfit';
+	font-style: normal;
+	font-weight: normal;
+	src: url('./public/outfit.woff2') format('woff2');
+}
+
 body {
 	margin: 0;
 }
@@ -291,18 +288,22 @@ body {
 	flex-direction: column;
 }
 
-@font-face {
-	font-family: 'Outfit';
-	font-style: normal;
-	font-weight: normal;
-	src: url('./public/outfit.woff2') format('woff2');
+#root {
+	width: 100vw;
+	display: flex;
+	background-color: var(--background);
+	justify-content: center;
 }
 
 .wordleList {
 	font-family: 'Outfit';
 	background-color: var(--background);
 	width: 100vw;
+	max-width: 800px;
+	align-self: center;
 }
+
+
 
 .favComponents, .nonFavComponents {
 	justify-content: center;

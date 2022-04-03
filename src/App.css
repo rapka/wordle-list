@@ -42,6 +42,13 @@
 	}
 }
 
+@font-face {
+	font-family: 'Outfit';
+	font-style: normal;
+	font-weight: normal;
+	src: url('./public/outfit.woff2') format('woff2');
+}
+
 body {
 	margin: 0;
 }
@@ -56,18 +63,22 @@ body {
 	flex-direction: column;
 }
 
-@font-face {
-	font-family: 'Outfit';
-	font-style: normal;
-	font-weight: normal;
-	src: url('./public/outfit.woff2') format('woff2');
+#root {
+	width: 100vw;
+	display: flex;
+	background-color: var(--background);
+	justify-content: center;
 }
 
 .wordleList {
 	font-family: 'Outfit';
 	background-color: var(--background);
 	width: 100vw;
+	max-width: 800px;
+	align-self: center;
 }
+
+
 
 .favComponents, .nonFavComponents {
 	justify-content: center;
