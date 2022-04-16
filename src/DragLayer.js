@@ -1,8 +1,8 @@
 import React from 'react';
 import { useDragLayer } from 'react-dnd';
-import LinkCardPreview from './LinkCardPreview';
+import RowDragPreview from './RowDragPreview';
 
-const layerStyles: React.CSSProperties = {
+const layerStyles = {
   position: 'fixed',
   pointerEvents: 'none',
   zIndex: 100,
@@ -19,7 +19,7 @@ const getItemStyles = (initialOffset, currentOffset) => {
     };
   }
 
-  const transform = translate(${currentOffset.x}px, ${currentOffset.y}px);
+  const transform = `translate(${currentOffset.x}px, ${currentOffset.y}px)`;
 
   return {
     transform,
@@ -43,7 +43,7 @@ const DragLayer = () => {
   return (
     <div style={layerStyles}>
       <div style={getItemStyles(initialOffset, currentOffset)}>
-        <LinkCardPreview text={item.text} />
+        <RowDragPreview game={item.game} ready={item.ready} />
       </div>
     </div>
   );

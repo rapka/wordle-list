@@ -41,12 +41,13 @@ function InfoModal({ onClose, onChangeNightMode, nightMode, openInTab, setOpenIn
             <Cross onClick={onClose} />
         </div>
         <div className="infoModal-desc">
-          Wordle Tracker is a simple app for tracking all your daily Wordle games!
-          <br />
-          To make suggestions, access a static version of the game list, or see the source code, please visit the <a href="https://www.github.com/rapka/wordle-list">the Github page</a>.
+          Wordle Tracker is a simple app for tracking all your daily Wordle games! To get started, simply tap the heart to add or remove a game for your favorites and drag them into your preferred order.
           <br />
           <br />
           Some games reset at midnight GMT while most others reset at midnight EST (UTC-5). Because of this, a timer of 24 hours is used to determine which games have been played recently.
+          <br />
+          <br />
+          To make suggestions, access a static version of the game list, or see the source code, please visit the <a href="https://www.github.com/rapka/wordle-list">the Github page</a>.
           <br />
           <br />
           <div className="infoModal-credits">built with &lt;3 by <a href="https://www.twitter.com/thecollegehill">college hill</a></div>

@@ -116,7 +116,7 @@ button {
 .wordleList {
 	background-color: var(--background);
 	width: 100vw;
-	max-width: 800px;
+	max-width: 900px;
 	align-self: center;
 }
 

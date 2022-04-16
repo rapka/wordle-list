@@ -13,6 +13,7 @@ import { arrayMoveImmutable } from 'array-move';
 import Header from './Header';
 import Row from './Row';
 import InfoModal from './InfoModal';
+import DragLayer from './DragLayer';
 
 import './App.css';
 
@@ -133,16 +134,18 @@ function WordleList({ games }) {
   });
 
   const favoritesList = favorites.length ? (
-    <DndProvider backend={HTML5Backend} options={{ enableMouseEvents: true }}>
+
       <div className="favComponents f-col">
         <div className="wordleList-favHeader">Favorites</div>
         {favComponents}
       </div>
-    </DndProvider>
+
   ) : null;
 
   return (
+    <DndProvider backend={TouchBackend} options={{ enableMouseEvents: true }}>
     <div id="wordleList-app" className={`nightMode-${nightMode}`}>
+      <DragLayer />
       <div id="wordleList-appContents">
         {infoOpen && <InfoModal
           onClose={() => setInfoOpen(false)}
@@ -163,6 +166,7 @@ function WordleList({ games }) {
         </div>
       </div>
     </div>
+    </DndProvider>
   );
 }
 

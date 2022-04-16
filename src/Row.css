@@ -6,9 +6,17 @@
 }
 
 /* Allow tiles to be smaller on small screens */
-@media (max-height: 600px) {
+@media (max-width: 900px) {
   .wordleList-row {
-    font-size: 1em;
+    font-size: 1.25rem !important;
+  }
+
+  .wordleList-rowDesc {
+    font-size: 0.9rem !important;
+  }
+
+  .wordleList-rowTitle {
+  	margin-left: 4px !important;
   }
 }
 
@@ -17,6 +25,7 @@
 	flex-direction: row;
 	background-color: var(--color-tone-2);
 	color: var(--tile-text-color);
+	/*padding: 2px 0;*/
 	font-size: 2rem;
 	display: inline-flex;
 	justify-content: space-between;
@@ -31,6 +40,8 @@
 
 .wordleList-row.preview {
 	border: 0 !important;
+	width: 100%;
+	max-width: 900px;
 }
 
 .wordleList-row.fav {
@@ -59,6 +70,7 @@
 
 .wordleList-rowTitle {
 	margin-left: 8px;
+	margin-right: 2px;
 	flex: 2;
 	flex-grow: 1;
 }
@@ -67,15 +79,15 @@
 	font-size: 1.5rem;
 	flex: 5;
 	flex-grow: 2;
+	line-height: 1.1;
 }
 
 a.wordleList-playButton  {
 	text-decoration: none;
 	color: var(--tile-text-color);
 	background-color: var(--darkenedYellow);
-	margin: 6px 8px;
-	border-radius: 4px;
-  padding: 0 8px;
+	margin: 4px 8px;
+  padding: 8px 8px;
 	flex: 1;
 	flex-grow: 0;
 	border-radius: 4px;
@@ -97,6 +109,7 @@ a.wordleList-playButton.ready:hover {
 .wordleList-dragButton {
 	cursor: grab;
 	display: flex;
+	margin-left: 4px;
 }
 
 .wordleList-favHeader {

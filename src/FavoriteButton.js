@@ -8,8 +8,8 @@ const markdownLinkToHref = (str) => str.replace(/\[(.*)\]\((.*)\)/, '<a href="$2
 
 function FavoriteButton({ toggled, onClick }) {
   return (
-    <div className="favButton" onClick={onClick}>
-        <HeartIcon className={`heartIcon ${toggled ? 'filled' : ''}`} />
+    <div className={`favButton ${toggled ? 'toggled' : ''}`} onClick={onClick}>
+        <HeartIcon className="heartIcon" />
     </div>
   );
 }

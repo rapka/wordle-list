@@ -35,12 +35,26 @@
 	display: flex;
 }
 
+.favButton.toggled {
+	margin-left: 0;
+}
+
 .heartIcon {
 	width: 38px;
 	cursor: pointer;
 }
+/*
+.favButton.toggled .heartIcon {
+	width: 32px;
+}*/
 
-.heartIcon.filled .heart_svg__heart-body {
+@media (max-width: 900px) {
+  .heartIcon {
+  	width: 32px;
+  }
+}
+
+.favButton.toggled .heart_svg__heart-body {
 	cursor: pointer;
 	fill: var(--tile-text-color);
 }
@@ -49,7 +63,7 @@
 	fill: var(--tile-text-color);
 }
 
-.heartIcon.filled:hover > .heart_svg__heart-body {
+.favButton.toggled:hover > .heart_svg__heart-body {
 	fill: var(--color-tone-2);
 }
 
@@ -71,9 +85,17 @@
 }
 
 /* Allow tiles to be smaller on small screens */
-@media (max-height: 600px) {
+@media (max-width: 900px) {
   .wordleList-row {
-    font-size: 1em;
+    font-size: 1.25rem !important;
+  }
+
+  .wordleList-rowDesc {
+    font-size: 0.9rem !important;
+  }
+
+  .wordleList-rowTitle {
+  	margin-left: 4px !important;
   }
 }
 
@@ -82,6 +104,7 @@
 	flex-direction: row;
 	background-color: var(--color-tone-2);
 	color: var(--tile-text-color);
+	/*padding: 2px 0;*/
 	font-size: 2rem;
 	display: inline-flex;
 	justify-content: space-between;
@@ -96,6 +119,8 @@
 
 .wordleList-row.preview {
 	border: 0 !important;
+	width: 100%;
+	max-width: 900px;
 }
 
 .wordleList-row.fav {
@@ -124,6 +149,7 @@
 
 .wordleList-rowTitle {
 	margin-left: 8px;
+	margin-right: 2px;
 	flex: 2;
 	flex-grow: 1;
 }
@@ -132,15 +158,15 @@
 	font-size: 1.5rem;
 	flex: 5;
 	flex-grow: 2;
+	line-height: 1.1;
 }
 
 a.wordleList-playButton  {
 	text-decoration: none;
 	color: var(--tile-text-color);
 	background-color: var(--darkenedYellow);
-	margin: 6px 8px;
-	border-radius: 4px;
-  padding: 0 8px;
+	margin: 4px 8px;
+  padding: 8px 8px;
 	flex: 1;
 	flex-grow: 0;
 	border-radius: 4px;
@@ -163,6 +189,7 @@ a.wordleList-playButton.ready:hover {
 	cursor: -webkit-grab;
 	cursor: grab;
 	display: flex;
+	margin-left: 4px;
 }
 
 .wordleList-favHeader {
@@ -443,7 +470,7 @@ button {
 .wordleList {
 	background-color: var(--background);
 	width: 100vw;
-	max-width: 800px;
+	max-width: 900px;
 	align-self: center;
 }
 

@@ -4,12 +4,26 @@
 	display: flex;
 }
 
+.favButton.toggled {
+	margin-left: 0;
+}
+
 .heartIcon {
 	width: 38px;
 	cursor: pointer;
 }
+/*
+.favButton.toggled .heartIcon {
+	width: 32px;
+}*/
 
-.heartIcon.filled .heart_svg__heart-body {
+@media (max-width: 900px) {
+  .heartIcon {
+  	width: 32px;
+  }
+}
+
+.favButton.toggled .heart_svg__heart-body {
 	cursor: pointer;
 	fill: var(--tile-text-color);
 }
@@ -18,7 +32,7 @@
 	fill: var(--tile-text-color);
 }
 
-.heartIcon.filled:hover > .heart_svg__heart-body {
+.favButton.toggled:hover > .heart_svg__heart-body {
 	fill: var(--color-tone-2);
 }
 

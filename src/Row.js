@@ -35,7 +35,7 @@ const Row = memo(function Row({ game, onFav, onUnFav, onPlay, faved, favorites, 
   if (faved) {
     const [{ isDragging }, drag] = useDrag(() => ({
         type: 'ROW',
-        item: { id, originalIndex },
+        item: { id, originalIndex, game, ready },
         collect: (monitor) => ({
             isDragging: monitor.isDragging(),
         }),
@@ -46,7 +46,7 @@ const Row = memo(function Row({ game, onFav, onUnFav, onPlay, faved, favorites, 
                 moveRow(droppedId, originalIndex);
             }
         },
-    }), [id, favorites, moveRow]);
+    }), [id, favorites, moveRow], game, ready);
 
     const [, drop] = useDrop(() => ({
         accept: 'ROW',
@@ -57,15 +57,18 @@ const Row = memo(function Row({ game, onFav, onUnFav, onPlay, faved, favorites, 
                 moveRow(draggedId, overIndex);
             }
         },
-    }), [id, favorites, moveRow]);
+    }), [id, favorites, moveRow, game, ready]);
 
-    refFunc = (node) => drag(drop(node));
-    opacity = isDragging ? 0 : 1;
+    // refFunc = (node) => drag(drop(node));
+    dragRef = (node) => drag(node);
+    dropRef = (node) => drop(node);
+
+    opacity = isDragging ? 0.2 : 1;
   }
 
   return (
-    <div className={`wordleList-row ${faved ? 'fav' : ''}`} ref={refFunc} style={{ opacity }}>
-        {faved && <div className="wordleList-dragButton" ><DragIcon /></div>}
+    <div className={`wordleList-row ${faved ? 'fav' : ''}`} ref={dropRef} style={{ opacity }}>
+        {faved && <div className="wordleList-dragButton" ref={dragRef} ><DragIcon /></div>}
         <FavoriteButton toggled={faved} onClick={toggleFav} />
         <div className="wordleList-rowTitle">{game.title}</div>
         {!ready && false && <div className="wordleList-rowTime">{game.title}</div>}

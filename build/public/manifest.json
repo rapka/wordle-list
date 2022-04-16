@@ -8,11 +8,11 @@
   "background_color": "#fff",
   "description": "A simple app for tracking all your daily Wordle games!",
   "icons": [{
-    "src": "public/favicon.png",
+    "src": "favicon.png",
     "sizes": "128x128",
     "type": "image/png"
   }, {
-    "src": "public/favicon-192.png",
+    "src": "favicon-192.png",
     "sizes": "192x192",
     "type": "image/png"
   }],
