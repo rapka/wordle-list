@@ -1,8 +1,8 @@
 # wordle-list
 
-A handy compilation of games based on Josh Wardle's Wordle. For a new interactive version, [click here](rapka.github.io/wordle-list/)
+A handy compilation of games based on Josh Wardle's Wordle. For an interactive app version of this list, [click here](rapka.github.io/wordle-list/)
 
-Feel free to open an issue with bugs, suggestions or corrections! See CONTRIBUTING.md for more details.
+Feel free to open an issue with bugs, suggestions or corrections! See [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
 
 
 ## Normal Wordle Variants
@@ -79,3 +79,4 @@ Semantic Wordle (Semantle) ranks guesses based on word meaning rather than match
 | ------------ | ----------- | ---- |
 | Semantle | Original Semantic Wordle | [PLAY](https://semantle.novalis.org/) | 
 | Pimantle | Semantle with guess visualization tools | [PLAY](https://semantle.pimanrul.es/) | 
+

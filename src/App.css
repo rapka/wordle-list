@@ -28,7 +28,7 @@
 #wordleList-app {
 	--text-color: var(--color-tone-1);
 	--tile-text-color: var(--color-tone-7);
-	--background2: var(--color-tone-6);
+	--background2: var(--color-tone-5);
 	--background:  var(--color-tone-7);
 
 	color: var(--text-color);
@@ -71,7 +71,7 @@
 	--color-tone-5: #edeff1;
 	--color-tone-6: #f6f7f8;
 	--color-tone-7: #ffffff;
-	--background2: var(--color-tone-6);
+	--background2: var(--color-tone-5);
 	/*--tile-text-color: var(--color-tone-1);*/
 }
 
@@ -128,7 +128,7 @@ button {
 
 .favComponents {
 	background-color: var(--background2);
-	margin-bottom: 8px;
+	margin-bottom: 16px;
 	color: var(--darkendGreen);
 	border-color: var(--darkendGreen);
 	border-width: 1px;
@@ -144,5 +144,24 @@ button {
 	text-align: center;
 	font-size: 2rem;
 	color: var(--darkendGreen);
-	padding: 4px 0;
+	padding: 6px 0;
 }
+
+.wordleList-favHeader:first-letter {
+	border-radius: 4px;
+	overflow: hidden;
+	background-color: var(--green);
+	color: var(--tile-text-color);
+	padding: 0 4px;
+	margin-right: 1px;
+}
+
+.firstLetter:first-letter {
+	border-radius: 4px;
+	overflow: hidden;
+	background-color: var(--green);
+	color: var(--tile-text-color);
+	padding: 0 4px;
+	margin-right: 1px;
+}
+

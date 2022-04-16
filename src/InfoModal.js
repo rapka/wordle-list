@@ -37,7 +37,7 @@ function InfoModal({ onClose, onChangeNightMode, nightMode, openInTab, setOpenIn
     <div className="infoModal-container f-col">
       <div className="infoModal">
         <div className="infoModal-titleRow">
-            <div className="infoModal-title">About</div>
+            <div className="infoModal-title firstLetter">About</div>
             <Cross onClick={onClose} />
         </div>
         <div className="infoModal-desc">
@@ -53,7 +53,7 @@ function InfoModal({ onClose, onChangeNightMode, nightMode, openInTab, setOpenIn
           <div className="infoModal-credits">built with &lt;3 by <a href="https://www.twitter.com/thecollegehill">college hill</a></div>
         </div>
 
-        <div className="infoModal-title">Options</div>
+        <div className="infoModal-title firstLetter">Options</div>
         <div className="infoModal-optionRow">
           <div className="infoModal-optionTitle">Night Mode</div>
           <div className="infoModal-optionRowContents">
@@ -117,7 +117,7 @@ function InfoModal({ onClose, onChangeNightMode, nightMode, openInTab, setOpenIn
             </div>
           </div>
         </div>
-        <div className="infoModal-title">Data</div>
+        <div className="infoModal-title firstLetter">Data</div>
         <div className="infoModal-deleteContainer">
           {!clearConfirmVisible && <button className="infoModal-deleteButton" onClick={() => setClearConfirmVisible(true)}>Remove all favorites</button>}
           {clearConfirmVisible && clearDataConfirm}

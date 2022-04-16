@@ -111,9 +111,3 @@ a.wordleList-playButton.ready:hover {
 	display: flex;
 	margin-left: 4px;
 }
-
-.wordleList-favHeader {
-	width: 100%;
-	text-align: center;
-	font-size: 2rem;
-}

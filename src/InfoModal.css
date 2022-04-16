@@ -69,15 +69,6 @@
 	text-transform: uppercase;
 }
 
-.infoModal-title:first-letter {
-	border-radius: 4px;
-	overflow: hidden;
-	background-color: var(--green);
-	color: var(--tile-text-color);
-	padding: 0 2px;
-	margin-right: 1px;
-}
-
 .infoModal-optionTitle {
 	font-size: 1.5rem;
 	text-align: center;

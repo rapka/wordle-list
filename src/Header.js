@@ -9,13 +9,13 @@ const markdownLinkToHref = (str) => str.replace(/\[(.*)\]\((.*)\)/, '<a href="$2
 
 function Header({ openInfo }) {
   return (
-    <div className="wordleHeader">
+    <header className="wordleHeader">
       <div className="wordleHeader-titleRow">
           <QuestionMark className="questionIcon" onClick={openInfo} />
-          <div className="wordleHeader-title">Wordle Tracker</div>
+          <div className="wordleHeader-title" aria-label="Wordle Tracker"><div className="firstLetter">Wordle</div>&nbsp;<div className="firstLetter">Tracker</div></div>
       </div>
       <div className="wordleHeader-desc">A simple app for tracking all your daily Wordle games!</div>
-    </div>
+    </header>
   );
 }
 
