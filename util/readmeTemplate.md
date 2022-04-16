@@ -1,6 +1,6 @@
 # wordle-list
 
-A handy compilation of games based on Josh Wardle's Wordle. For an interactive app version of this list, [click here](rapka.github.io/wordle-list/)
+A handy compilation of games based on Josh Wardle's Wordle. For an interactive app version of this list, [click here](rapka.github.io/wordle-list/)!
 
 Feel free to open an issue with bugs, suggestions or corrections! See [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
 

@@ -81,12 +81,17 @@
 	},{
 		"title": "Sweardle",
 		"description": "Four letter swear words **(NSFW)**",
-		"url": "Guess commonly used passwords",
+		"url": "https://sweardle.com/",
 		"type": "newDictionary"
 	},{
 		"title": "Passwordle",
-		"description": "Guess commonly used passwords",
-		"url": "https://sweardle.com/",
+		"description": "Guess commonly used long passwords",
+		"url": "https://passwordle.com/",
+		"type": "newDictionary"
+	},{
+		"title": "Passwordle (Alt)",
+		"description": "Guess commonly used short passwords",
+		"url": "https://passwordle.sp8c3.com/",
 		"type": "newDictionary"
 	},{
 		"title": "Airportle",

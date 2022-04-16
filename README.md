@@ -32,8 +32,9 @@ These variants follow normal Wordle rules but use a different word list.
 | Canuckle | Canada-themed words | [PLAY](https://canucklegame.github.io/canuckle/) | 
 | Gordle | Hockey themed words | [PLAY](https://gordle.herokuapp.com/) | 
 | Lewdle | Lewd words **(NSFW)**  | [PLAY](https://www.lewdlegame.com/) | 
-| Sweardle | Four letter swear words **(NSFW)** | [PLAY](Guess commonly used passwords) | 
-| Passwordle | Guess commonly used passwords | [PLAY](https://sweardle.com/) | 
+| Sweardle | Four letter swear words **(NSFW)** | [PLAY](https://sweardle.com/) | 
+| Passwordle | Guess commonly used long passwords | [PLAY](https://passwordle.com/) | 
+| Passwordle (Alt) | Guess commonly used short passwords | [PLAY](https://passwordle.sp8c3.com/) | 
 | Airportle | Guess the airport by the IATA code | [PLAY](https://airportle.scottscheapflights.com/) | 
 | Scholardle | Science and academia jargon | [PLAY](https://www.scholardle.com/) | 
 | Bardle | Shakespearean terminology | [PLAY](https://shakespearegeek.github.io/bardle/) | 
