@@ -12,12 +12,14 @@ const standardGames = createLines(gamesList, 'standard');
 const newDictionaryGames = createLines(gamesList, 'newDictionary');
 const newGameplayGames = createLines(gamesList, 'newGameplay');
 const semanticGames = createLines(gamesList, 'semantic');
+const gameCount = Math.floor(gamesList.length / 5) * 5;
 
 const templateOptions = {
 	standardGames,
 	newDictionaryGames,
 	newGameplayGames,
 	semanticGames,
+	gameCount,
 };
 
 const templatefunction = _.template(templateText);
