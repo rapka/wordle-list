@@ -84,6 +84,7 @@
 
 a.wordleList-playButton  {
 	text-decoration: none;
+	text-transform: uppercase;
 	color: var(--tile-text-color);
 	background-color: var(--darkenedYellow);
 	margin: 4px 8px;
