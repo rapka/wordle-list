@@ -1,12 +1,12 @@
 {
   "$schema": "https://json.schemastore.org/web-manifest-combined.json",
-  "name": "Wordle Tracker App",
-  "short_name": "WordleTracker",
+  "name": "Wordle Bookmarks",
+  "short_name": "WordleBookmarks",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000",
   "background_color": "#fff",
-  "description": "A simple app for tracking all your daily Wordle games!",
+  "description": "A simple app for finding all your daily Wordle games!",
   "icons": [{
     "src": "favicon.png",
     "sizes": "128x128",
