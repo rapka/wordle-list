@@ -14,9 +14,12 @@ import json from '@rollup/plugin-json';
 import nodePolyfills from 'rollup-plugin-polyfill-node';
 import copy from 'rollup-plugin-copy';
 import svgr from '@svgr/rollup';
+import sourcemaps from 'rollup-plugin-sourcemaps';
+
 import rollupTemplate from './util/rollupTemplate';
 
 const plugins = [
+  // sourcemaps(),
   replace({
     'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
     preventAssignment: true,
@@ -47,6 +50,8 @@ const plugins = [
   babel({
     babelHelpers: 'bundled',
     exclude: 'node_modules/**',
+    inputSourceMap: true,
+    sourceMaps: true,
     babelrc: false,
     presets: [
       [
@@ -84,7 +89,7 @@ if (process.env.NODE_ENV === 'development') {
   livereload(),
   ]);
 } else {
-  plugins.push(terser());
+  // plugins.push(terser());
 }
 export default {
   input: 'src/index.js',
@@ -92,7 +97,7 @@ export default {
     {
       file: 'build/index.js',
       format: 'umd',
-      sourcemap: true,
+      sourcemap: false,
       name: 'wordle-list',
     }
   ],
