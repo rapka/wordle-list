@@ -30,7 +30,6 @@ const plugins = [
     ]
   }),
   json(),
-  // svg({ base64: true }),
   svgr(),
   postcss({
     extract: true,
@@ -88,7 +87,7 @@ if (process.env.NODE_ENV === 'development') {
   livereload(),
   ]);
 } else {
-  // plugins.push(terser());
+  plugins.push(terser());
 }
 export default {
   input: 'src/index.js',
