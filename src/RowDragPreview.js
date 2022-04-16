@@ -10,7 +10,7 @@ const markdownLinkToHref = (str) => str.replace(/\[(.*)\]\((.*)\)/, '<a href="$2
 
 const RowDragPreview = ({ game, ready }) => {
   const faved = true;
-  console.log('rrrr', game, ready);
+
   return (
     <div className="wordleList-row faved preview">
       <div className="wordleList-dragButton" ><DragIcon /></div>
