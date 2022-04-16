@@ -97,7 +97,7 @@ export default {
     {
       file: 'build/index.js',
       format: 'umd',
-      sourcemap: false,
+      sourcemap: true,
       name: 'wordle-list',
     }
   ],
