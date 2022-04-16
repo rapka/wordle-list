@@ -1,7 +1,7 @@
 [
 	{
 		"title": "Wordle",
-		"description": "Original Formula (New York Times owned)",
+		"description": "Original Formula (NYT owned)",
 		"url": "https://www.nytimes.com/games/wordle/index.html",
 		"type": "standard"
 	},
@@ -31,7 +31,7 @@
 	},
 	{
 		"title": "Sedordle",
-		"description": "16x Wordle (alternate version)",
+		"description": "16x Wordle (alt. version)",
 		"url": "https://sedordle.com/",
 		"type": "standard"
 	},
@@ -149,7 +149,7 @@
 	},
 	{
 		"title": "Antiwordle",
-		"description": "Avoid guessing the word (alternate version)",
+		"description": "Avoid guessing the word (alt. version)",
 		"url": "https://weredle.netlify.app/",
 		"type": "newGameplay"
 	},

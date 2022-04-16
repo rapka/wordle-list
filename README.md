@@ -11,12 +11,12 @@ These games follow the original Wordle rules but add additional words to guess.
 
 | Variant name | Description | Link
 | ------------ | ----------- | ---- |
-| Wordle | Original Formula (New York Times owned) | [PLAY](https://www.nytimes.com/games/wordle/index.html) | 
+| Wordle | Original Formula (NYT owned) | [PLAY](https://www.nytimes.com/games/wordle/index.html) | 
 | Dordle | 2x Wordle | [PLAY](https://zaratustra.itch.io/dordle) | 
 | Quordle | 4x Wordle | [PLAY](https://www.quordle.com/) | 
 | Octordle | 8x Wordle | [PLAY](https://octordle.com/) | 
 | Sedecordle | 16x Wordle | [PLAY](http://www.sedecordle.com/) | 
-| Sedordle | 16x Wordle (alternate version) | [PLAY](https://sedordle.com/) | 
+| Sedordle | 16x Wordle (alt. version) | [PLAY](https://sedordle.com/) | 
 | Kilordle | 1000x Wordle | [PLAY](https://jonesnxt.github.io/kilordle/) | 
 
 ## Nonstandard Dictionary Variants
@@ -52,7 +52,7 @@ These games don't follow traditional Wordle rules.
 | ------------ | ----------- | ---- |
 | Wordle Peaks | Missed letters give better hints |
 | Survivle | Avoid guessing the word | [PLAY](https://lazyguyy.github.io/survivle/) | 
-| Antiwordle | Avoid guessing the word (alternate version) | [PLAY](https://weredle.netlify.app/) | 
+| Antiwordle | Avoid guessing the word (alt. version) | [PLAY](https://weredle.netlify.app/) | 
 | Weredle | One of the tiles gives bad answers for guesses | [PLAY](https://weredle.netlify.app/) | 
 | Nerdle | Guess the mystery math equation | [PLAY](https://nerdlegame.com/) | 
 | Mathler | Guess the math equation that matches the number | [PLAY](https://www.mathler.com/) | 
