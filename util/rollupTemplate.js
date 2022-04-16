@@ -1,3 +1,4 @@
+// Modded template function from the plugin to include favicon links
 const { makeHtmlAttributes } = require('@rollup/plugin-html');
 
 const rollupTemplate = async ({

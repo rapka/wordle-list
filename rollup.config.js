@@ -72,6 +72,26 @@ const plugins = [
         name: 'viewport',
         content: 'width=device-width, initial-scale=1.0',
       },
+      {
+        name: 'description',
+        content: 'A simple app for finding all your daily Wordle games!',
+      },
+      {
+        name: 'og:description',
+        content: 'A simple app for finding all your daily Wordle games!',
+      },
+      {
+        name: 'og:title',
+        content: 'Wordle Boorkmark App',
+      },
+      {
+        name: 'og:image',
+        content: 'public/ogimage.png',
+      },
+      {
+        name: 'twitter:site',
+        content: 'thecollegehill',
+      },
     ],
   }),
 ];

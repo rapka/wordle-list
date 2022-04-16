@@ -1,7 +1,7 @@
 {
   "name": "wordle-list",
   "version": "1.0.0",
-  "description": "A handy compilation of games based on Josh Wardle's Wordle. Feel free to open an issue with bugs or suggestions!",
+  "description": "A simple app for finding all your daily Wordle games!",
   "scripts": {
     "clean": "rm -rf build/",
     "build": "npm run build:js && npm run build:md",
