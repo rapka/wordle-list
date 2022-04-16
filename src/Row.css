@@ -107,7 +107,7 @@ a.wordleList-playButton.ready:hover {
 }
 
 .wordleList-dragButton {
-	cursor: grab;
+	cursor: move;
 	display: flex;
 	margin-left: 4px;
 }

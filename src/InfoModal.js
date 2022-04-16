@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
-import Cross from './img/x.svg'
+import Cross from './img/x.svg';
 
 import './InfoModal.css';
 
@@ -128,7 +128,11 @@ function InfoModal({ onClose, onChangeNightMode, nightMode, openInTab, setOpenIn
 }
 
 InfoModal.propTypes = {
-  onClose: PropTypes.func,
+  onClose: PropTypes.func.isRequired,
+  onChangeNightMode: PropTypes.func.isRequired,
+  nightMode: PropTypes.bool.isRequired,
+  setOpenInTab: PropTypes.func.isRequired,
+  clearFavs: PropTypes.bool.isRequired,
 };
 
 export default InfoModal;

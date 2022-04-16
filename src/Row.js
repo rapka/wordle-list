@@ -14,7 +14,6 @@ const markdownLinkToHref = (str) => str.replace(/\[(.*)\]\((.*)\)/, '<a href="$2
 const Row = memo(function Row({ game, onFav, onUnFav, onPlay, faved, favorites, moveRow, lastPlay, timestamp, openInTab }) {
   const toggleFav = () => faved ? onUnFav() : onFav();
   const id = game.title;
-  console.log('lastPlay', lastPlay);
   const originalIndex = favorites.indexOf(id);
 
   let ready = false;
@@ -29,7 +28,6 @@ const Row = memo(function Row({ game, onFav, onUnFav, onPlay, faved, favorites, 
 
   let dragRef = () => {};
   let dropRef = () => {};
-  let refFunc = () => {};
   let opacity = 1;
 
   if (faved) {
@@ -51,7 +49,6 @@ const Row = memo(function Row({ game, onFav, onUnFav, onPlay, faved, favorites, 
     const [, drop] = useDrop(() => ({
         accept: 'ROW',
         hover({ id: draggedId }) {
-            console.log('in hover', id, draggedId);
             if (draggedId !== id) {
                 const overIndex = favorites.indexOf(id);
                 moveRow(draggedId, overIndex);
@@ -59,7 +56,6 @@ const Row = memo(function Row({ game, onFav, onUnFav, onPlay, faved, favorites, 
         },
     }), [id, favorites, moveRow, game, ready]);
 
-    // refFunc = (node) => drag(drop(node));
     dragRef = (node) => drag(node);
     dropRef = (node) => drop(node);
 

@@ -114,7 +114,7 @@ function WordleList({ games }) {
 
   favorites.map(title => {
     const game = find(games, { title });
-    console.log('mapp', games, game, title);
+
     favComponents.push(
       <Row
         key={game.title}
