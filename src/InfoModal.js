@@ -37,8 +37,8 @@ function InfoModal({ onClose, onChangeNightMode, nightMode, openInTab, setOpenIn
     <div className="infoModal-container f-col">
       <div className="infoModal">
         <div className="infoModal-titleRow">
-            <div className="infoModal-title firstLetter">About</div>
             <Cross onClick={onClose} />
+            <div className="infoModal-title firstLetter">About</div>
         </div>
         <div className="infoModal-desc">
           Wordle Tracker is a simple app for tracking all your daily Wordle games! To get started, simply tap the heart to add or remove a game for your favorites and drag them into your preferred order.
@@ -130,9 +130,10 @@ function InfoModal({ onClose, onChangeNightMode, nightMode, openInTab, setOpenIn
 InfoModal.propTypes = {
   onClose: PropTypes.func.isRequired,
   onChangeNightMode: PropTypes.func.isRequired,
-  nightMode: PropTypes.bool.isRequired,
+  nightMode: PropTypes.string.isRequired,
   setOpenInTab: PropTypes.func.isRequired,
-  clearFavs: PropTypes.bool.isRequired,
+  clearFavs: PropTypes.func.isRequired,
+  openInTab: PropTypes.bool.isRequired,
 };
 
 export default InfoModal;

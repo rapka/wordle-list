@@ -87,6 +87,10 @@ body {
 	font-family: 'Outfit';
 }
 
+body.noscroll {
+	overflow: hidden;
+}
+
 button {
 	font-family: 'Outfit';
 }

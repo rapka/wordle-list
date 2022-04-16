@@ -28,6 +28,7 @@
 @media screen and (max-width: 700px) {
 	.infoModal {
 		margin: 0;
+		border-radius: 0;
 	}
 }
 
@@ -58,7 +59,7 @@
 .infoModal-titleRow svg {
 	width: 36px;
 	position: absolute;
-	right: 0;
+	left: 0;
 	top: 0;
 	cursor: pointer;
 }

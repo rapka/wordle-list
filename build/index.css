@@ -39,6 +39,12 @@
 	left: 0;
 	z-index: 2;
 }
+
+@media (max-width: 400px) {
+  .questionIcon {
+  	left: -12px;
+  }
+}
 .favButton {
 	margin-left: 8px;
 	flex-grow: 0;
@@ -231,6 +237,7 @@ a.wordleList-playButton.ready:hover {
 @media screen and (max-width: 700px) {
 	.infoModal {
 		margin: 0;
+		border-radius: 0;
 	}
 }
 
@@ -261,7 +268,7 @@ a.wordleList-playButton.ready:hover {
 .infoModal-titleRow svg {
 	width: 36px;
 	position: absolute;
-	right: 0;
+	left: 0;
 	top: 0;
 	cursor: pointer;
 }
@@ -434,6 +441,10 @@ a.wordleList-playButton.ready:hover {
 body {
 	margin: 0;
 	font-family: 'Outfit';
+}
+
+body.noscroll {
+	overflow: hidden;
 }
 
 button {

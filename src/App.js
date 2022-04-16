@@ -37,10 +37,20 @@ function WordleList({ games }) {
   const [nightMode, setNightMode] = useState(window.localStorage.getItem('wordleList-nightMode') || 'auto');
   const [openInTab, setOpenInTab] = useState((window.localStorage.getItem('wordleList-openInTab') || 'true') === 'true');
 
+  const openModal = () => {
+    setInfoOpen(true);
+    document.body.classList.add('noscroll');
+  };
+
+  const closeModal = () => {
+    setInfoOpen(false);
+    document.body.classList.remove('noscroll');
+  };
+
   useEffect(() => {
     document.addEventListener('keydown', function(event){
       if(event.key === 'Escape') {
-        setInfoOpen(false);
+        closeModal();
       }
     });
  });
@@ -148,7 +158,7 @@ function WordleList({ games }) {
       <DragLayer />
       <div id="wordleList-appContents">
         {infoOpen && <InfoModal
-          onClose={() => setInfoOpen(false)}
+          onClose={() => closeModal()}
           onChangeNightMode={setNightMode}
           nightMode={nightMode}
           openInTab={openInTab}
@@ -157,7 +167,7 @@ function WordleList({ games }) {
         />}
         <div className="wordleList f-col" >
           <Header
-            openInfo={() => setInfoOpen(true)}
+            openInfo={() => openModal()}
           />
           {favoritesList}
           <div className="nonFavComponents f-col">
