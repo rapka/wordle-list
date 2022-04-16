@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
 import QuestionMark from './img/question.svg';
-import Gear from './img/gear.svg'
 
 import './Header.css';
 

@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "A handy compilation of games based on Josh Wardle's Wordle. Feel free to open an issue with bugs or suggestions!",
   "scripts": {
+    "clean": "rm -rf build/",
     "build": "npm run build:js && npm run build:md",
     "build:md": "node ./util/generateReadme.js",
     "build:js": "NODE_ENV=production rollup -c rollup.config.js",
     "dev": "NODE_ENV=development rollup -c rollup.config.js -w",
     "start": "npm run dev",
-    "deploy": "npm run build && git subtree push --prefix build origin gh-pages"
+    "deploy": "npm run clean && npm run build && git subtree push --prefix build origin gh-pages"
   },
   "repository": {
     "type": "git",
