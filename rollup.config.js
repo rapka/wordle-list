@@ -14,6 +14,7 @@ import json from '@rollup/plugin-json';
 import nodePolyfills from 'rollup-plugin-polyfill-node';
 import copy from 'rollup-plugin-copy';
 import svgr from '@svgr/rollup';
+import rollupTemplate from './util/rollupTemplate';
 
 const plugins = [
   replace({
@@ -60,7 +61,10 @@ const plugins = [
   }),
   commonjs(),
   nodePolyfills(),
-  html({  title: 'Wordle Bookmark App' }),
+  html({
+    title: 'Wordle Bookmark App',
+    template: rollupTemplate,
+  }),
 ];
 
 if (process.env.NODE_ENV === 'development') {
