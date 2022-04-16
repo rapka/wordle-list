@@ -108,13 +108,13 @@
 	{
 		"title": "BRDL",
 		"description": "Four lettter [bird banding codes](https://www.pwrc.usgs.gov/bbl/manual/speclist.cfm)",
-		"url": "https://www.pwrc.usgs.gov/bbl/manual/speclist.cfm",
+		"url": "https://brdl.alex.gd/",
 		"type": "newDictionary"
 	},
 	{
 		"title": "BTS Wordle",
 		"description": "For BTS stans",
-		"url": "https://brdl.alex.gd/",
+		"url": "https://bts-wordle.vercel.app/",
 		"type": "newDictionary"
 	},
 	{

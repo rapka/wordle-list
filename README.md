@@ -37,8 +37,8 @@ These variants follow normal Wordle rules but use a different word list.
 | Airportle | Guess the airport by the IATA code | [PLAY](https://airportle.scottscheapflights.com/) | 
 | Scholardle | Science and academia jargon | [PLAY](https://www.scholardle.com/) | 
 | Bardle | Shakespearean terminology | [PLAY](https://shakespearegeek.github.io/bardle/) | 
-| BRDL | Four lettter [bird banding codes](https://www.pwrc.usgs.gov/bbl/manual/speclist.cfm) | [PLAY](https://www.pwrc.usgs.gov/bbl/manual/speclist.cfm) | 
-| BTS Wordle | For BTS stans | [PLAY](https://brdl.alex.gd/) | 
+| BRDL | Four lettter [bird banding codes](https://www.pwrc.usgs.gov/bbl/manual/speclist.cfm) | [PLAY](https://brdl.alex.gd/) | 
+| BTS Wordle | For BTS stans | [PLAY](https://bts-wordle.vercel.app/) | 
 | Taylordle | For Taylor Swift stans | [PLAY](https://www.taylordle.com/) | 
 | Lordle of the Rings | For Lord of the Rings fans | [PLAY](https://digitaltolkien.github.io/vue-wordle/) | 
 | Star Wordle | For Star Wars fans | [PLAY](https://www.starwordle.com/) | 
