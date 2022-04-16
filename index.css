@@ -238,6 +238,7 @@ a.wordleList-playButton.ready:hover {
 	.infoModal {
 		margin: 0;
 		border-radius: 0;
+		padding: 1rem;
 	}
 }
 
