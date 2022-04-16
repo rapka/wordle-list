@@ -11,9 +11,9 @@
 	--color-tone-6: #f6f7f8;
 	--color-tone-7: #ffffff;
 	--green: #6aaa64;
-	--darkendGreen: #538d4e;
+	--darkenedGreen: #538d4e;
 	--yellow: #c9b458;
-	--darkendYellow: #b59f3b;
+	--darkenedYellow: #b59f3b;
 	--lightGray: #d8d8d8;
 	--gray: #86888a;
 	--darkGray: #939598;
@@ -21,11 +21,20 @@
 	--black: #212121;
 	--orange: #f5793a;
 	--blue: #85c0f9;
+	--red: #9F0000;
+	--darkenedRed: #850000;
+}
 
-	--text-color:  var(--color-tone-1);
-	--tile-text-color:  var(--color-tone-7);
+#wordleList-app {
+	--text-color: var(--color-tone-1);
+	--tile-text-color: var(--color-tone-7);
 	--background2: var(--color-tone-6);
 	--background:  var(--color-tone-7);
+
+	color: var(--text-color);
+	width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -37,9 +46,33 @@
 	--color-tone-5: #272729;
 	--color-tone-6: #1a1a1b;
 	--color-tone-7: #121213;
-	--background2: #dddddd;
+	--background2: var(--color-tone-5);
 	--tile-text-color: var(--color-tone-1);
 	}
+}
+
+#wordleList-app.nightMode-on {
+	--color-tone-1: #ffffff;
+	--color-tone-2: #818384;
+	--color-tone-3: #565758;
+	--color-tone-4: #3a3a3c;
+	--color-tone-5: #272729;
+	--color-tone-6: #1a1a1b;
+	--color-tone-7: #121213;
+	--background2: var(--color-tone-5);
+	--tile-text-color: var(--color-tone-1);
+}
+
+#wordleList-app.nightMode-off {
+	--color-tone-1: #000000;
+	--color-tone-2: #787c7e;
+	--color-tone-3: #878a8c;
+	--color-tone-4: #d3d6da;
+	--color-tone-5: #edeff1;
+	--color-tone-6: #f6f7f8;
+	--color-tone-7: #ffffff;
+	--background2: var(--color-tone-6);
+	/*--tile-text-color: var(--color-tone-1);*/
 }
 
 @font-face {
@@ -51,6 +84,11 @@
 
 body {
 	margin: 0;
+	font-family: 'Outfit';
+}
+
+button {
+	font-family: 'Outfit';
 }
 
 .f-row {
@@ -66,37 +104,39 @@ body {
 #root {
 	width: 100vw;
 	display: flex;
-	background-color: var(--background);
 	justify-content: center;
+	font-family: 'Outfit';
+	color: var(--text-color);
+}
+
+#wordleList-app {
+	background-color: var(--background);
 }
 
 .wordleList {
-	font-family: 'Outfit';
 	background-color: var(--background);
 	width: 100vw;
 	max-width: 800px;
 	align-self: center;
 }
 
-
-
 .favComponents, .nonFavComponents {
 	justify-content: center;
 	border-radius: 8px;
-	padding: 8px 0 0 0;
 	overflow: hidden;
 }
 
 .favComponents {
-		background-color: var(--background2);
-		margin-bottom: 8px;
-		color: var(--darkendGreen);
-		border-color: var(--darkendGreen);
-		border-width: 1px;
+	background-color: var(--background2);
+	margin-bottom: 8px;
+	color: var(--darkendGreen);
+	border-color: var(--darkendGreen);
+	border-width: 1px;
 }
 
 .nonFavComponents {
-		background-color: var(--background2);
+	background-color: var(--background2);
+	margin: 0 0 2rem 0;
 }
 
 .wordleList-favHeader {
@@ -104,5 +144,5 @@ body {
 	text-align: center;
 	font-size: 2rem;
 	color: var(--darkendGreen);
-	padding-bottom: 8px;
+	padding: 4px 0;
 }

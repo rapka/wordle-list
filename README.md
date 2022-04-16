@@ -1,6 +1,8 @@
 # wordle-list
 
-A handy compilation of games based on Josh Wardle's Wordle. Feel free to open an issue with bugs or suggestions! See CONTRIBUTING.md for more details.
+A handy compilation of games based on Josh Wardle's Wordle. For a new interactive version, [click here](rapka.github.io/wordle-list/)
+
+Feel free to open an issue with bugs, suggestions or corrections! See CONTRIBUTING.md for more details.
 
 
 ## Normal Wordle Variants
@@ -55,11 +57,12 @@ These games don't follow traditional Wordle rules.
 | Nerdle | Guess the mystery math equation | [PLAY](https://nerdlegame.com/) | 
 | Mathler | Guess the math equation that matches the number | [PLAY](https://www.mathler.com/) | 
 | Primel | Solutions are 5 digit prime numbers | [PLAY](https://converged.yt/primel/) | 
-| Squardle | Squardle | 2D Wordle in a crossword configuration | [PLAY](https://fubargames.se/squardle/) | 
+| Squardle | 2D Wordle in a crossword configuration | [PLAY](https://fubargames.se/squardle/) | 
 | Waffle | Swap letters in a crossword configuration | [PLAY](https://wafflegame.net/) | 
 | Absurdle | Secret word changes to avoid your guesses | [PLAY](https://qntm.org/files/absurdle/absurdle.html) | 
 | Crosswordle | Reverse engineer the guess from the final word | [PLAY](https://crosswordle.vercel.app/) | 
 | Heardle | Guess the song based on audio snippets | [PLAY](https://www.heardle.app/) | 
+| Framed | Guess the movie based on screenshots | [PLAY](https://framed.wtf/) | 
 | Worldle | Guess the country based on its outline | [PLAY](https://worldle.teuteuf.fr/) | 
 | Globle | Guess the country based on distance from other countries | [PLAY](https://globle-game.com/) | 
 | Flaggle | Guess the flag based on matching colors | [PLAY](https://ducc.pythonanywhere.com/flaggle/) | 

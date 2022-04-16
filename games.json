@@ -179,7 +179,7 @@
 	},
 	{
 		"title": "Squardle",
-		"description": "Squardle | 2D Wordle in a crossword configuration",
+		"description": "2D Wordle in a crossword configuration",
 		"url": "https://fubargames.se/squardle/",
 		"type": "newGameplay"
 	},
@@ -205,6 +205,12 @@
 		"title": "Heardle",
 		"description": "Guess the song based on audio snippets",
 		"url": "https://www.heardle.app/",
+		"type": "newGameplay"
+	},
+	{
+		"title": "Framed",
+		"description": "Guess the movie based on screenshots",
+		"url": "https://framed.wtf/",
 		"type": "newGameplay"
 	},
 	{

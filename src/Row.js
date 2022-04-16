@@ -11,13 +11,22 @@ const HOUR = 1000 * 60 * 60;
 
 const markdownLinkToHref = (str) => str.replace(/\[(.*)\]\((.*)\)/, '<a href="$2">$1</a>');
 
-const Row = memo(function Row({ game, onFav, onUnFav, onPlay, faved, favorites, moveRow, lastPlay }) {
+const Row = memo(function Row({ game, onFav, onUnFav, onPlay, faved, favorites, moveRow, lastPlay, timestamp, openInTab }) {
   const toggleFav = () => faved ? onUnFav() : onFav();
   const id = game.title;
-  console.log('favorites', lastPlay);
+  console.log('lastPlay', lastPlay);
   const originalIndex = favorites.indexOf(id);
 
-  const ready = lastPlay - HOUR * 24;
+  let ready = false;
+  const midnight = new Date(timestamp).setHours(0, 0, 0, 0);
+
+  // Last play was over a day ago
+  if (!lastPlay) {
+    ready = true;
+  } else if (timestamp - lastPlay > (24 * HOUR)) {
+    ready = true;
+  }
+
   let dragRef = () => {};
   let dropRef = () => {};
   let refFunc = () => {};
@@ -56,12 +65,19 @@ const Row = memo(function Row({ game, onFav, onUnFav, onPlay, faved, favorites, 
 
   return (
     <div className={`wordleList-row ${faved ? 'fav' : ''}`} ref={refFunc} style={{ opacity }}>
-      {faved && <div className="wordleList-dragButton" ><DragIcon /></div>}
-      <FavoriteButton toggled={faved} onClick={toggleFav} />
-      <div className="wordleList-rowTitle">{game.title}</div>
-      {!ready && false && <div className="wordleList-rowTime">{game.title}</div>}
-      <div className="wordleList-rowDesc" dangerouslySetInnerHTML={{ __html: markdownLinkToHref(game.description) }} />
-      <a href={game.url} onClick={onPlay} className={`wordleList-playButton ${ready ? 'ready' : ''}`}>Play</a>
+        {faved && <div className="wordleList-dragButton" ><DragIcon /></div>}
+        <FavoriteButton toggled={faved} onClick={toggleFav} />
+        <div className="wordleList-rowTitle">{game.title}</div>
+        {!ready && false && <div className="wordleList-rowTime">{game.title}</div>}
+        <div className="wordleList-rowDesc" dangerouslySetInnerHTML={{ __html: markdownLinkToHref(game.description) }} />
+        <a
+            href={game.url}
+            onClick={onPlay}
+            className={`wordleList-playButton ${ready ? 'ready' : ''}`}
+            target={openInTab ? '_blank' : ''}
+        >
+            Play
+        </a>
     </div>
   );
 });
@@ -77,6 +93,7 @@ Row.propTypes = {
   onFav: PropTypes.func,
   onPlay: PropTypes.func,
   lastPlay: PropTypes.number,
+  timestamp: PropTypes.number.isRequired,
 };
 
 Row.defaultProps = {

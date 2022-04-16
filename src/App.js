@@ -2,6 +2,10 @@ import React, { useEffect, useState, useCallback } from 'react';
 import PropTypes from 'prop-types';
 import cloneDeep from 'lodash/cloneDeep';
 import find from 'lodash/find';
+import addDays from 'date-fns/addDays';
+import addHours from 'date-fns/addHours';
+import format from 'date-fns/format';
+import formatDistance from 'date-fns/formatDistance';
 import { DndProvider } from 'react-dnd';
 import { TouchBackend } from 'react-dnd-touch-backend';
 import { HTML5Backend } from 'react-dnd-html5-backend';
@@ -12,22 +16,30 @@ import InfoModal from './InfoModal';
 
 import './App.css';
 
-const MINUTE = 1000 * 60 * 60;
+const SECOND = 1000;
+const MINUTE = SECOND * 60;
+const HOUR = MINUTE * 60;
+
+function formatCountdown(ms) {
+  let h = ms / 3.6e6 | 0;
+  let m = (ms % 3.6e6) / 6e4 | 0;
+  let s = (ms % 6e4) / 1e3 | 0;
+  return `${h}:${('' + m).padStart(2, '0')}:${('' + s).padStart(2, '0')}`;
+}
 
 function WordleList({ games }) {
   const [infoOpen, setInfoOpen] = useState(false);
-  const [optionsOpen, setOptionsOpen] = useState(false);
   const [iframeUrl, setIframeUrl] = useState('');
   const [favorites, setFavorites] = useState(JSON.parse(window.localStorage.getItem('wordleList-favorites')) || []);
   const [lastPlayed, setLastPlayed] = useState(JSON.parse(window.localStorage.getItem('wordleList-history')) || {});
   const [timestamp, setTimestamp] = useState(Date.now());
+  const [nightMode, setNightMode] = useState(window.localStorage.getItem('wordleList-nightMode') || 'auto');
+  const [openInTab, setOpenInTab] = useState((window.localStorage.getItem('wordleList-openInTab') || 'true') === 'true');
 
- //  // Similar to componentDidMount and componentDidUpdate:
   useEffect(() => {
     document.addEventListener('keydown', function(event){
       if(event.key === 'Escape') {
         setInfoOpen(false);
-        setOptionsOpen(false);
       }
     });
  });
@@ -36,14 +48,15 @@ function WordleList({ games }) {
 
   setTimeout(() => {
     setTimestamp(Date.now());
-  }, MINUTE);
+  }, SECOND);
 
-
+  const tomorrow = addDays(new Date(timestamp), 1).setUTCHours(0, 0, 0, 0);
+  const tomorrowNYT = addHours(tomorrow, -5).setUTCHours(5, 0, 0, 0);
+  const resetTime = tomorrow - timestamp;
+  const nytResetTime = tomorrowNYT - timestamp;
 
   const favComponents = [];
   const nonFavComponents = [];
-
-  console.log(favorites, 'favorites', favComponents, nonFavComponents);
 
   const addFav = (title) => {
     const newFavs = cloneDeep(favorites);
@@ -64,12 +77,19 @@ function WordleList({ games }) {
     const newLastPlayed = lastPlayed;
     newLastPlayed[title] = timestamp;
 
-    window.localStorage.setItem('wordleList-history', JSON.stringify(newFavs));
+    window.localStorage.setItem('wordleList-history', JSON.stringify(newLastPlayed));
     setLastPlayed(prevState => { return {...prevState, ...newLastPlayed }; });
   };
 
   const moveRow = (title, targetIndex) => {
     setFavorites([...arrayMoveImmutable(favorites, favorites.indexOf(title), targetIndex)]);
+  };
+
+  const clearFavs = () => {
+    window.localStorage.setItem('wordleList-favorites', JSON.stringify([]));
+    window.localStorage.setItem('wordleList-history', JSON.stringify({}));
+    setFavorites([]);
+    setLastPlayed({});
   };
 
   games.map(game => {
@@ -80,10 +100,12 @@ function WordleList({ games }) {
           faved={false}
           onFav={() => addFav(game.title)}
           onUnFav={() => removeFav(game.title)}
-          onPlay={setLastPlayedGame}
+          onPlay={() => setLastPlayedGame(game.title)}
           lastPlay={lastPlayed[game.title]}
+          timestamp={timestamp}
           favorites={favorites}
           moveRow={moveRow}
+          resetTime={nytResetTime}
         />
       );
     }
@@ -99,10 +121,13 @@ function WordleList({ games }) {
         faved={true}
         onFav={() => addFav(game.title)}
         onUnFav={() => removeFav(game.title)}
-        onPlay={setLastPlayedGame}
+        onPlay={() => setLastPlayedGame(game.title)}
         lastPlay={lastPlayed[game.title]}
         favorites={favorites}
+        timestamp={timestamp}
         moveRow={moveRow}
+        resetTime={nytResetTime}
+        openInTab={openInTab}
       />
     );
   });
@@ -110,23 +135,32 @@ function WordleList({ games }) {
   const favoritesList = favorites.length ? (
     <DndProvider backend={HTML5Backend} options={{ enableMouseEvents: true }}>
       <div className="favComponents f-col">
-        <div className="wordleList-favHeader">My Favorites</div>
+        <div className="wordleList-favHeader">Favorites</div>
         {favComponents}
       </div>
     </DndProvider>
   ) : null;
 
   return (
-    <div className="wordleList f-col" id="worldleList-app">
-      {infoOpen && <InfoModal onClose={() => setInfoOpen(false)} />}
-      {optionsOpen && <OptionsModal onClose={() => setOptionsOpen(false)} />}
-      <Header
-        openInfo={() => setInfoOpen(true)}
-        openOptions={() => openOptions(true)}
-      />
-      {favoritesList}
-      <div className="nonFavComponents f-col">
-        {nonFavComponents}
+    <div id="wordleList-app" className={`nightMode-${nightMode}`}>
+      <div id="wordleList-appContents">
+        {infoOpen && <InfoModal
+          onClose={() => setInfoOpen(false)}
+          onChangeNightMode={setNightMode}
+          nightMode={nightMode}
+          openInTab={openInTab}
+          setOpenInTab={setOpenInTab}
+          clearFavs={clearFavs}
+        />}
+        <div className="wordleList f-col" >
+          <Header
+            openInfo={() => setInfoOpen(true)}
+          />
+          {favoritesList}
+          <div className="nonFavComponents f-col">
+            {nonFavComponents}
+          </div>
+        </div>
       </div>
     </div>
   );

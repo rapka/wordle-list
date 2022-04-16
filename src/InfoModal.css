@@ -1,22 +1,52 @@
 .infoModal-container {
+	font-family: 'Outfit';
 	position: fixed;
-	height: 100vh;
+	height: 100%;
 	width: 100vw;
+	left: 0;
 	z-index: 10;
 	justify-content: center;
 	align-items: center;
-	background-color: var(--background);
-	color: var(--tile-text-color);
+	/*background-color: var(--background);*/
+	background-color: rgba(0.5, 0.5, 0.5, 0.5);
+	font-size: 1.5rem;
 }
 
 .infoModal {
-	max-width: 600px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 700px;
 	/*box-shadow: 0 4px 23px 0 rgb(0 0 0 / 20%);*/
 	box-shadow: 0 4px 23px 0 rgb(255 255 255 / 20%);
-	height: 100%;
+	background-color: var(--background);
 	padding: 2rem;
-	margin: 2rem;
 	border-radius: 8px;
+	overflow-y: scroll;
+}
+
+@media screen and (max-width: 700px) {
+	.infoModal {
+		margin: 0;
+	}
+}
+
+.infoModal a {
+	color: var(--text-color);
+}
+
+.infoModal a:hover {
+	text-decoration-thickness: 3px;
+}
+
+.infoModal-desc {
+	font-size: 1.25rem;
+	padding: 1rem 0;
+	text-align: center;
+}
+
+.infoModal-credits {
+	opacity: 0.8;
 }
 
 .infoModal-titleRow {
@@ -26,13 +56,100 @@
 }
 
 .infoModal-titleRow svg {
+	width: 36px;
 	position: absolute;
 	right: 0;
 	top: 0;
-	margin: 8px 8px 0 0;
 	cursor: pointer;
 }
 
 .infoModal-title {
 	font-size: 2rem;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.infoModal-title:first-letter {
+	border-radius: 4px;
+	overflow: hidden;
+	background-color: var(--green);
+	color: var(--tile-text-color);
+	padding: 0 2px;
+	margin-right: 1px;
+}
+
+.infoModal-optionTitle {
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.infoModal input {
+	display: none;
+}
+
+.infoModal-deleteContainer {
+	margin-top: 4px;
+}
+
+.infoModal-deleteButton {
+	background-color: var(--darkenedRed);
+}
+
+.infoModal-deleteButton:hover {
+	background-color: var(--red);
+}
+
+.infoModal-nevermind {
+	background-color: var(--darkenedYellow);
+}
+
+.infoModal-nevermind:hover {
+	background-color: var(--yellow);
+}
+
+.infoModal button {
+	border: 0;
+	font-size: 1.5rem;
+	padding: 4px 8px;
+	margin: 6px;
+}
+
+.infoModal button,
+.infoModal input+label {
+	color: var(--tile-text-color);
+	border-radius: 4px;
+	cursor: pointer;
+	margin: 4px;
+}
+
+.infoModal input+label {
+	background-color: var(--darkenedYellow);
+	padding: 4px;
+}
+
+.infoModal input+label:hover {
+	background-color: var(--yellow);
+}
+
+.infoModal input:checked+label {
+	background-color: var(--darkenedGreen);
+}
+
+.infoModal input:checked+label:hover {
+	background-color: var(--green);
+}
+
+.infoModal-optionRow {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 8px 0;
+	width: 100%;
+	max-width: 80%;
+}
+
+.infoModal-optionRowContents {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }

@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "A handy compilation of games based on Josh Wardle's Wordle. Feel free to open an issue with bugs or suggestions!",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run build:js && npm run build:md",
     "build:md": "node ./util/generateReadme.js",
     "build:js": "NODE_ENV=production rollup -c rollup.config.js",

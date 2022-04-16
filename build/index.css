@@ -8,7 +8,7 @@
 
 .wordleHeader-titleRow svg {
 	display: block;
-	width: 48px;
+	width: 36px;
 	align-self: center;
 	cursor: pointer;
 }
@@ -74,7 +74,6 @@
 @media (max-height: 600px) {
   .wordleList-row {
     font-size: 1em;
-    line-height: 1em;
   }
 }
 
@@ -87,11 +86,10 @@
 	display: inline-flex;
 	justify-content: space-between;
 	align-items: center;
-	line-height: 3.5rem;
 	font-weight: bold;
 	vertical-align: middle;
 	box-sizing: border-box;
-	border-width: 3px 0 3px 0;
+	border-width: 3px 0 0 0;
 	border-style: solid;
 	border-color: var(--color-tone-4);
 }
@@ -106,6 +104,10 @@
 
 .wordleList-row:not(:last-child) {
 	border-bottom-width: 0;
+}
+
+.wordleList-row:first-child {
+	border-top-width: 0;
 }
 
 .wordleList-row a {
@@ -135,7 +137,7 @@
 a.wordleList-playButton  {
 	text-decoration: none;
 	color: var(--tile-text-color);
-	background-color: var(--darkendGreen);
+	background-color: var(--darkenedYellow);
 	margin: 6px 8px;
 	border-radius: 4px;
   padding: 0 8px;
@@ -145,16 +147,16 @@ a.wordleList-playButton  {
 }
 
 a.wordleList-playButton:hover {
-	background-color: var(--green);
+	background-color: var(--yellow) !important;
 }
 
 a.wordleList-playButton.ready {
 	color: var(--tile-text-color) !important;
-	background-color: var(--darkenedYellow) !important;
+	background-color: var(--darkenedGreen) !important;
 }
 
 a.wordleList-playButton.ready:hover {
-	background-color: var(--yellow) !important;
+	background-color: var(--green) !important;
 }
 
 .wordleList-dragButton {
@@ -163,47 +165,60 @@ a.wordleList-playButton.ready:hover {
 	display: flex;
 }
 
-.favComponents, .nonFavComponents {
-	justify-content: center;
-	border-radius: 8px;
-	padding: 8px 0;
-	overflow: hidden;
-}
-
-.favComponents {
-		background-color: var(--color-tone-2);
-		margin-bottom: 8px;
-
-}
-
-.nonFavComponents {
-		background-color: var(--color-tone-3);
-}
-
 .wordleList-favHeader {
 	width: 100%;
 	text-align: center;
 	font-size: 2rem;
 }
 .infoModal-container {
+	font-family: 'Outfit';
 	position: fixed;
-	height: 100vh;
+	height: 100%;
 	width: 100vw;
+	left: 0;
 	z-index: 10;
 	justify-content: center;
 	align-items: center;
-	background-color: var(--background);
-	color: var(--tile-text-color);
+	/*background-color: var(--background);*/
+	background-color: rgba(0.5, 0.5, 0.5, 0.5);
+	font-size: 1.5rem;
 }
 
 .infoModal {
-	max-width: 600px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 700px;
 	/*box-shadow: 0 4px 23px 0 rgb(0 0 0 / 20%);*/
 	box-shadow: 0 4px 23px 0 rgb(255 255 255 / 20%);
-	height: 100%;
+	background-color: var(--background);
 	padding: 2rem;
-	margin: 2rem;
 	border-radius: 8px;
+	overflow-y: scroll;
+}
+
+@media screen and (max-width: 700px) {
+	.infoModal {
+		margin: 0;
+	}
+}
+
+.infoModal a {
+	color: var(--text-color);
+}
+
+.infoModal a:hover {
+	text-decoration-thickness: 3px;
+}
+
+.infoModal-desc {
+	font-size: 1.25rem;
+	padding: 1rem 0;
+	text-align: center;
+}
+
+.infoModal-credits {
+	opacity: 0.8;
 }
 
 .infoModal-titleRow {
@@ -213,15 +228,102 @@ a.wordleList-playButton.ready:hover {
 }
 
 .infoModal-titleRow svg {
+	width: 36px;
 	position: absolute;
 	right: 0;
 	top: 0;
-	margin: 8px 8px 0 0;
 	cursor: pointer;
 }
 
 .infoModal-title {
 	font-size: 2rem;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.infoModal-title:first-letter {
+	border-radius: 4px;
+	overflow: hidden;
+	background-color: var(--green);
+	color: var(--tile-text-color);
+	padding: 0 2px;
+	margin-right: 1px;
+}
+
+.infoModal-optionTitle {
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.infoModal input {
+	display: none;
+}
+
+.infoModal-deleteContainer {
+	margin-top: 4px;
+}
+
+.infoModal-deleteButton {
+	background-color: var(--darkenedRed);
+}
+
+.infoModal-deleteButton:hover {
+	background-color: var(--red);
+}
+
+.infoModal-nevermind {
+	background-color: var(--darkenedYellow);
+}
+
+.infoModal-nevermind:hover {
+	background-color: var(--yellow);
+}
+
+.infoModal button {
+	border: 0;
+	font-size: 1.5rem;
+	padding: 4px 8px;
+	margin: 6px;
+}
+
+.infoModal button,
+.infoModal input+label {
+	color: var(--tile-text-color);
+	border-radius: 4px;
+	cursor: pointer;
+	margin: 4px;
+}
+
+.infoModal input+label {
+	background-color: var(--darkenedYellow);
+	padding: 4px;
+}
+
+.infoModal input+label:hover {
+	background-color: var(--yellow);
+}
+
+.infoModal input:checked+label {
+	background-color: var(--darkenedGreen);
+}
+
+.infoModal input:checked+label:hover {
+	background-color: var(--green);
+}
+
+.infoModal-optionRow {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 8px 0;
+	width: 100%;
+	max-width: 80%;
+}
+
+.infoModal-optionRowContents {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 :root {
 	--wordle-yellow: rgb(255, 204, 0);
@@ -236,9 +338,9 @@ a.wordleList-playButton.ready:hover {
 	--color-tone-6: #f6f7f8;
 	--color-tone-7: #ffffff;
 	--green: #6aaa64;
-	--darkendGreen: #538d4e;
+	--darkenedGreen: #538d4e;
 	--yellow: #c9b458;
-	--darkendYellow: #b59f3b;
+	--darkenedYellow: #b59f3b;
 	--lightGray: #d8d8d8;
 	--gray: #86888a;
 	--darkGray: #939598;
@@ -246,11 +348,20 @@ a.wordleList-playButton.ready:hover {
 	--black: #212121;
 	--orange: #f5793a;
 	--blue: #85c0f9;
+	--red: #9F0000;
+	--darkenedRed: #850000;
+}
 
-	--text-color:  var(--color-tone-1);
-	--tile-text-color:  var(--color-tone-7);
+#wordleList-app {
+	--text-color: var(--color-tone-1);
+	--tile-text-color: var(--color-tone-7);
 	--background2: var(--color-tone-6);
 	--background:  var(--color-tone-7);
+
+	color: var(--text-color);
+	width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -262,9 +373,33 @@ a.wordleList-playButton.ready:hover {
 	--color-tone-5: #272729;
 	--color-tone-6: #1a1a1b;
 	--color-tone-7: #121213;
-	--background2: #dddddd;
+	--background2: var(--color-tone-5);
 	--tile-text-color: var(--color-tone-1);
 	}
+}
+
+#wordleList-app.nightMode-on {
+	--color-tone-1: #ffffff;
+	--color-tone-2: #818384;
+	--color-tone-3: #565758;
+	--color-tone-4: #3a3a3c;
+	--color-tone-5: #272729;
+	--color-tone-6: #1a1a1b;
+	--color-tone-7: #121213;
+	--background2: var(--color-tone-5);
+	--tile-text-color: var(--color-tone-1);
+}
+
+#wordleList-app.nightMode-off {
+	--color-tone-1: #000000;
+	--color-tone-2: #787c7e;
+	--color-tone-3: #878a8c;
+	--color-tone-4: #d3d6da;
+	--color-tone-5: #edeff1;
+	--color-tone-6: #f6f7f8;
+	--color-tone-7: #ffffff;
+	--background2: var(--color-tone-6);
+	/*--tile-text-color: var(--color-tone-1);*/
 }
 
 @font-face {
@@ -276,6 +411,11 @@ a.wordleList-playButton.ready:hover {
 
 body {
 	margin: 0;
+	font-family: 'Outfit';
+}
+
+button {
+	font-family: 'Outfit';
 }
 
 .f-row {
@@ -291,37 +431,39 @@ body {
 #root {
 	width: 100vw;
 	display: flex;
-	background-color: var(--background);
 	justify-content: center;
+	font-family: 'Outfit';
+	color: var(--text-color);
+}
+
+#wordleList-app {
+	background-color: var(--background);
 }
 
 .wordleList {
-	font-family: 'Outfit';
 	background-color: var(--background);
 	width: 100vw;
 	max-width: 800px;
 	align-self: center;
 }
 
-
-
 .favComponents, .nonFavComponents {
 	justify-content: center;
 	border-radius: 8px;
-	padding: 8px 0 0 0;
 	overflow: hidden;
 }
 
 .favComponents {
-		background-color: var(--background2);
-		margin-bottom: 8px;
-		color: var(--darkendGreen);
-		border-color: var(--darkendGreen);
-		border-width: 1px;
+	background-color: var(--background2);
+	margin-bottom: 8px;
+	color: var(--darkendGreen);
+	border-color: var(--darkendGreen);
+	border-width: 1px;
 }
 
 .nonFavComponents {
-		background-color: var(--background2);
+	background-color: var(--background2);
+	margin: 0 0 2rem 0;
 }
 
 .wordleList-favHeader {
@@ -329,5 +471,5 @@ body {
 	text-align: center;
 	font-size: 2rem;
 	color: var(--darkendGreen);
-	padding-bottom: 8px;
+	padding: 4px 0;
 }

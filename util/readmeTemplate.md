@@ -1,6 +1,8 @@
 # wordle-list
 
-A handy compilation of games based on Josh Wardle's Wordle. Feel free to open an issue with bugs or suggestions! See CONTRIBUTING.md for more details.
+A handy compilation of games based on Josh Wardle's Wordle. For a new interactive version, [click here](rapka.github.io/wordle-list/)
+
+Feel free to open an issue with bugs, suggestions or corrections! See CONTRIBUTING.md for more details.
 
 
 ## Normal Wordle Variants
