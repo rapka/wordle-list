@@ -19,7 +19,7 @@ import sourcemaps from 'rollup-plugin-sourcemaps';
 import rollupTemplate from './util/rollupTemplate';
 
 const plugins = [
-  // sourcemaps(),
+  sourcemaps(),
   replace({
     'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
     preventAssignment: true,
@@ -50,8 +50,7 @@ const plugins = [
   babel({
     babelHelpers: 'bundled',
     exclude: 'node_modules/**',
-    inputSourceMap: true,
-    sourceMaps: true,
+    inputSourceMap: false,
     babelrc: false,
     presets: [
       [
