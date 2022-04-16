@@ -9,7 +9,8 @@
     "build:js": "NODE_ENV=production rollup -c rollup.config.js",
     "dev": "NODE_ENV=development rollup -c rollup.config.js -w",
     "start": "npm run dev",
-    "deploy": "npm run clean && npm run build && git subtree push --prefix build origin gh-pages"
+    "push": "git subtree split --prefix build -b gh-pages && git push -f origin gh-pages:gh-pages && git branch -D gh-pages",
+    "deploy": "npm run clean && npm run build && npm run push"
   },
   "repository": {
     "type": "git",
