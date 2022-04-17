@@ -1,6 +1,6 @@
 # wordle-list
 
-**For an interactive app version of this list, [click here](rapka.github.io/wordle-list/)!**
+**For an interactive app version of this list, [click here](https://rapka.github.io/wordle-list/)!**
 
 A handy compilation of over <%= gameCount %> games based on Josh Wardle's **Wordle**.
 
