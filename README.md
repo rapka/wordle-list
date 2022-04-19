@@ -54,6 +54,7 @@ These games don't follow traditional Wordle rules.
 | Variant name | Description | Link
 | ------------ | ----------- | ---- |
 | Wordle Peaks | Missed letters give better hints |
+| Redactle | Guess the Wikipedia article with redacted words | [PLAY](https://www.redactle.com/) | 
 | Survivle | Avoid guessing the word | [PLAY](https://lazyguyy.github.io/survivle/) | 
 | Antiwordle | Avoid guessing the word (alt. version) | [PLAY](https://weredle.netlify.app/) | 
 | Weredle | One of the tiles gives bad answers for guesses | [PLAY](https://weredle.netlify.app/) | 

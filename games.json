@@ -147,6 +147,12 @@
 		"type": "newDictionary"
 	},
 	{
+		"title": "Redactle",
+		"description": "Guess the Wikipedia article with redacted words",
+		"url": "https://www.redactle.com/",
+		"type": "newGameplay"
+	},
+	{
 		"title": "Survivle",
 		"description": "Avoid guessing the word",
 		"url": "https://lazyguyy.github.io/survivle/",
