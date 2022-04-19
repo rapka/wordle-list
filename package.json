@@ -1,6 +1,6 @@
 {
   "name": "wordle-list",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple app for finding all your daily Wordle games!",
   "scripts": {
     "clean": "rm -rf build/",
