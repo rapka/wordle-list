@@ -92,6 +92,7 @@ a.wordleList-playButton  {
 	flex: 1;
 	flex-grow: 0;
 	border-radius: 4px;
+	cursor: pointer;
 }
 
 a.wordleList-playButton:hover {
