@@ -33,8 +33,11 @@
 
 	color: var(--text-color);
 	width: 100%;
-  display: flex;
-  justify-content: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -140,7 +143,7 @@ button {
 
 .nonFavComponents {
 	background-color: var(--background2);
-	margin: 0 0 2rem 0;
+	margin: 0 0 1rem 0;
 }
 
 .wordleList-favHeader {
@@ -151,7 +154,7 @@ button {
 	padding: 6px 0;
 }
 
-.wordleList-favHeader:first-letter {
+.firstLetter:first-letter {
 	border-radius: 4px;
 	overflow: hidden;
 	background-color: var(--green);
@@ -160,12 +163,21 @@ button {
 	margin-right: 1px;
 }
 
-.firstLetter:first-letter {
+.wordleList-topButton {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: var(--color-tone-2);
+	border: 2px solid var(--color-tone-2);
+	margin: 0 0 1rem 0;
+	padding: 8px 8px;
+	flex: 1;
+	flex-grow: 0;
 	border-radius: 4px;
-	overflow: hidden;
-	background-color: var(--green);
-	color: var(--tile-text-color);
-	padding: 0 4px;
-	margin-right: 1px;
+	cursor: pointer;
+}
+
+.wordleList-topButton:hover {
+	color: var(--color-tone-1);
+	border: 2px solid var(--color-tone-1);
 }
 

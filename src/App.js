@@ -146,7 +146,7 @@ function WordleList({ games }) {
   const favoritesList = favorites.length ? (
 
       <div className="favComponents f-col">
-        <div className="wordleList-favHeader">Favorites</div>
+        <div className="wordleList-favHeader firstLetter">Favorites</div>
         {favComponents}
       </div>
 
@@ -175,6 +175,7 @@ function WordleList({ games }) {
           </div>
         </div>
       </div>
+      <a className="wordleList-topButton" href="#">top ⬆</a>
     </div>
     </DndProvider>
   );
