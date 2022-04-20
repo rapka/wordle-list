@@ -70,6 +70,7 @@ These games don't follow traditional Wordle rules.
 | Worldle | Guess the country based on its outline | [PLAY](https://worldle.teuteuf.fr/) | 
 | Globle | Guess the country based on distance from other countries | [PLAY](https://globle-game.com/) | 
 | Flaggle | Guess the flag based on matching colors | [PLAY](https://ducc.pythonanywhere.com/flaggle/) | 
+| Flaggle (Alt) | Guess the country from the flag | [PLAY](https://flaggle.app/) | 
 | Who Are Ya? | Guess the European football player | [PLAY](https://missing11.com/who-are-ya/) | 
 | POELTL | Guess the NBA player | [PLAY](https://poeltl.dunk.town/) | 
 | Subwaydle | Guess the NYC Subway trip | [PLAY](https://www.subwaydle.com/) | 

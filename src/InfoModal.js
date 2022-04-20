@@ -7,6 +7,7 @@ import './InfoModal.css';
 
 function InfoModal({ onClose, onChangeNightMode, nightMode, openInTab, setOpenInTab, clearFavs }) {
   const [clearConfirmVisible, setClearConfirmVisible] = useState(false);
+  const appVersion = document.querySelector('meta[name="appversion"]').content || '1.0.0';
 
   const onChangeMode = (value) => {
     onChangeNightMode(value);
@@ -50,7 +51,7 @@ function InfoModal({ onClose, onChangeNightMode, nightMode, openInTab, setOpenIn
           To access a static version of the game list, make suggestions, or see the source code, please visit the <a href="https://www.github.com/rapka/wordle-list">the Github page</a>.
           <br />
           <br />
-          <div className="infoModal-credits">built with &lt;3 by <a href="https://www.twitter.com/thecollegehill">college hill</a></div>
+          <div className="infoModal-credits">version {appVersion} | built with &lt;3 by <a href="https://www.twitter.com/thecollegehill">college hill</a></div>
         </div>
 
         <div className="infoModal-title firstLetter">Options</div>

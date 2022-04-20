@@ -92,6 +92,10 @@ const plugins = [
         name: 'twitter:site',
         content: 'thecollegehill',
       },
+      {
+        name: 'appversion',
+        content: process.env.npm_package_version,
+      }
     ],
   }),
 ];

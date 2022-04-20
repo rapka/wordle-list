@@ -243,6 +243,12 @@
 		"type": "newGameplay"
 	},
 	{
+		"title": "Flaggle (Alt)",
+		"description": "Guess the country from the flag",
+		"url": "https://flaggle.app/",
+		"type": "newGameplay"
+	},
+	{
 		"title": "Who Are Ya?",
 		"description": "Guess the European football player",
 		"url": "https://missing11.com/who-are-ya/",
