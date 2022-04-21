@@ -45,7 +45,6 @@ These variants follow normal Wordle rules but use a different word list.
 | Taylordle | For Taylor Swift stans | [PLAY](https://www.taylordle.com/) | 
 | Lordle of the Rings | For Lord of the Rings fans | [PLAY](https://digitaltolkien.github.io/vue-wordle/) | 
 | Star Wordle | For Star Wars fans | [PLAY](https://www.starwordle.com/) | 
-| Wordle Peaks | Missed letters give better hints | [PLAY](https://vegeta897.github.io/wordle-peaks/) | 
 
 ## Nonstandard Gameplay Variants
 
@@ -53,7 +52,7 @@ These games don't follow traditional Wordle rules.
 
 | Variant name | Description | Link
 | ------------ | ----------- | ---- |
-| Wordle Peaks | Missed letters give better hints |
+| Wordle Peaks | Missed letters give better hints | [PLAY](https://vegeta897.github.io/wordle-peaks/) | 
 | Redactle | Guess the Wikipedia article with redacted words | [PLAY](https://www.redactle.com/) | 
 | Survivle | Avoid guessing the word | [PLAY](https://lazyguyy.github.io/survivle/) | 
 | Antiwordle | Avoid guessing the word (alt. version) | [PLAY](https://weredle.netlify.app/) | 
