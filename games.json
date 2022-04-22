@@ -219,6 +219,12 @@
 		"type": "newGameplay"
 	},
 	{
+		"title": "Sonic Heardle",
+		"description": "Heardle, except only Sonic the Hedgehog music",
+		"url": "https://sonic-heardle.glitch.me/",
+		"type": "newGameplay"
+	},
+	{
 		"title": "Framed",
 		"description": "Guess the movie based on screenshots",
 		"url": "https://framed.wtf/",
