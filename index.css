@@ -9,6 +9,7 @@
 .wordleHeader-titleRow svg {
 	display: block;
 	width: 36px;
+	height: 36px;
 	align-self: center;
 	cursor: pointer;
 }
@@ -40,9 +41,23 @@
 	z-index: 2;
 }
 
-@media (max-width: 400px) {
+.gearIcon {
+	position: absolute;
+	right: 0;
+	z-index: 2;
+}
+
+@media (max-width: 450px) {
+	.wordleHeader-title {
+		font-size: 2.25rem;
+	}
+
   .questionIcon {
   	left: -12px;
+  }
+
+  .gearIcon {
+  	right: -12px;
   }
 }
 .favButton {
@@ -208,7 +223,40 @@ a.wordleList-playButton.ready:hover {
 	display: flex;
 	margin-left: 4px;
 }
-.infoModal-container {
+.versionHistory {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.versionHistory-list {
+	display: flex;
+	flex-direction: column-reverse;
+	text-align: left;
+	font-size: 1.5rem;
+}
+
+.versionHistory-button {
+	font-size: 1.25rem;
+	cursor: pointer;
+	text-align: center;
+	color: var(--text-color);
+}
+
+.versionHistory-button:hover {
+	text-decoration: underline;
+	text-decoration-thickness: 3px;
+}
+
+.versionHistory ul {
+	margin: 0.25rem 0;
+}
+
+.versionHistory li {
+	font-size: 1.2rem;
+}
+
+.modal-container {
 	font-family: 'Outfit';
 	position: fixed;
 	height: 100%;
@@ -222,11 +270,12 @@ a.wordleList-playButton.ready:hover {
 	font-size: 1.5rem;
 }
 
-.infoModal {
+.modal {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	max-width: 700px;
+	max-width: calc(700px - 4rem);
+	width: 100%;
 	/*box-shadow: 0 4px 23px 0 rgb(0 0 0 / 20%);*/
 	box-shadow: 0 4px 23px 0 rgb(255 255 255 / 20%);
 	background-color: var(--background);
@@ -236,11 +285,33 @@ a.wordleList-playButton.ready:hover {
 }
 
 @media screen and (max-width: 700px) {
-	.infoModal {
+	.modal {
 		margin: 0;
 		border-radius: 0;
 		padding: 1rem;
+		max-width: calc(100% - 2rem);
+		height: 100vh;
 	}
+}
+
+.modal-titleRow {
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+
+.modal-titleRow svg {
+	width: 36px;
+	position: absolute;
+	left: 0;
+	top: 4px;
+	cursor: pointer;
+}
+
+.modal-title {
+	font-size: 2rem;
+	text-align: center;
+	text-transform: uppercase;
 }
 
 .infoModal a {
@@ -261,97 +332,110 @@ a.wordleList-playButton.ready:hover {
 	opacity: 0.8;
 }
 
-.infoModal-titleRow {
-	position: relative;
-	width: 100%;
+.infoModal-historyTitle {
+	font-size: 1.5rem;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.infoModal-historyTitle .firstLetter:first-letter {
+	background-color: var(--yellow);
+}
+.optionsModal a {
+	color: var(--text-color);
+}
+
+.optionsModal a:hover {
+	text-decoration-thickness: 3px;
+}
+
+.optionsModal-desc {
+	font-size: 1.25rem;
+	padding: 1rem 0;
 	text-align: center;
 }
 
-.infoModal-titleRow svg {
-	width: 36px;
-	position: absolute;
-	left: 0;
-	top: 0;
-	cursor: pointer;
+.optionsModal-credits {
+	opacity: 0.8;
 }
 
-.infoModal-title {
+.optionsModal-title {
 	font-size: 2rem;
 	text-align: center;
 	text-transform: uppercase;
 }
 
-.infoModal-optionTitle {
+.optionsModal-optionTitle {
 	font-size: 1.5rem;
 	text-align: center;
 }
 
-.infoModal input {
+.optionsModal input {
 	display: none;
 }
 
-.infoModal-deleteContainer {
+.optionsModal-deleteContainer {
 	margin-top: 8px;
 }
 
-.infoModal-deleteButton {
+.optionsModal-deleteButton {
 	background-color: var(--darkenedRed);
 }
 
-.infoModal-deleteButton:hover {
+.optionsModal-deleteButton:hover {
 	background-color: var(--red);
 }
 
-.infoModal-nevermind {
+.optionsModal-nevermind {
 	background-color: var(--darkenedYellow);
 }
 
-.infoModal-nevermind:hover {
+.optionsModal-nevermind:hover {
 	background-color: var(--yellow);
 }
 
-.infoModal button {
+.optionsModal button {
 	border: 0;
 	font-size: 1.5rem;
 	padding: 4px 8px;
 	margin: 6px;
 }
 
-.infoModal button,
-.infoModal input+label {
+.optionsModal button,
+.optionsModal input+label {
 	color: var(--tile-text-color);
 	border-radius: 4px;
 	cursor: pointer;
 	margin: 4px;
 }
 
-.infoModal input+label {
+.optionsModal input+label {
 	background-color: var(--darkenedYellow);
 	padding: 4px;
 }
 
-.infoModal input+label:hover {
+.optionsModal input+label:hover {
 	background-color: var(--yellow);
 }
 
-.infoModal input:checked+label {
+.optionsModal input:checked+label {
 	background-color: var(--darkenedGreen);
 }
 
-.infoModal input:checked+label:hover {
+.optionsModal input:checked+label:hover {
 	background-color: var(--green);
 }
 
-.infoModal-optionRow {
+.optionsModal-optionRow {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin: 8px 0;
+	margin: 10px 0;
 	width: 100%;
 	max-width: 80%;
 }
 
-.infoModal-optionRowContents {
+.optionsModal-optionRowContents {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
