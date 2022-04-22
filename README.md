@@ -2,7 +2,7 @@
 
 **For an interactive app version of this list, [click here](https://rapka.github.io/wordle-list/)!**
 
-A handy compilation of over 45 games based on Josh Wardle's **Wordle**.
+A handy compilation of over 50 games based on Josh Wardle's **Wordle**.
 
 Feel free to open an issue with bugs, suggestions or corrections! See [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
 
@@ -66,6 +66,7 @@ These games don't follow traditional Wordle rules.
 | Absurdle | Secret word changes to avoid your guesses | [PLAY](https://qntm.org/files/absurdle/absurdle.html) | 
 | Crosswordle | Reverse engineer the guess from the final word | [PLAY](https://crosswordle.vercel.app/) | 
 | Heardle | Guess the song based on audio snippets | [PLAY](https://www.heardle.app/) | 
+| Sonic Heardle | Heardle, except only Sonic the Hedgehog music | [PLAY](https://sonic-heardle.glitch.me/) | 
 | Framed | Guess the movie based on screenshots | [PLAY](https://framed.wtf/) | 
 | Worldle | Guess the country based on its outline | [PLAY](https://worldle.teuteuf.fr/) | 
 | Globle | Guess the country based on distance from other countries | [PLAY](https://globle-game.com/) | 

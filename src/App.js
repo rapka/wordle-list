@@ -13,6 +13,7 @@ import { arrayMoveImmutable } from 'array-move';
 import Header from './Header';
 import Row from './Row';
 import InfoModal from './InfoModal';
+import OptionsModal from './OptionsModal';
 import DragLayer from './DragLayer';
 
 import './App.css';
@@ -30,6 +31,7 @@ function formatCountdown(ms) {
 
 function WordleList({ games }) {
   const [infoOpen, setInfoOpen] = useState(false);
+  const [optionsOpen, setOptionsOpen] = useState(false);
   const [iframeUrl, setIframeUrl] = useState('');
   const [favorites, setFavorites] = useState(JSON.parse(window.localStorage.getItem('wordleList-favorites')) || []);
   const [lastPlayed, setLastPlayed] = useState(JSON.parse(window.localStorage.getItem('wordleList-history')) || {});
@@ -37,20 +39,31 @@ function WordleList({ games }) {
   const [nightMode, setNightMode] = useState(window.localStorage.getItem('wordleList-nightMode') || 'auto');
   const [openInTab, setOpenInTab] = useState((window.localStorage.getItem('wordleList-openInTab') || 'true') === 'true');
 
-  const openModal = () => {
+  const openInfoModal = () => {
     setInfoOpen(true);
     document.body.classList.add('noscroll');
   };
 
-  const closeModal = () => {
+  const closeInfoModal = () => {
     setInfoOpen(false);
     document.body.classList.remove('noscroll');
   };
 
+  const openOptionsModal = () => {
+    setOptionsOpen(true);
+    document.body.classList.add('noscroll');
+  };
+
+  const closeOptionsModal = () => {
+    setOptionsOpen(false);
+    document.body.classList.remove('noscroll');
+  };
+
   useEffect(() => {
-    document.addEventListener('keydown', function(event){
+    document.addEventListener('keydown', function(event) {
       if(event.key === 'Escape') {
-        closeModal();
+        closeInfoModal();
+        closeOptionsModal();
       }
     });
  });
@@ -157,8 +170,9 @@ function WordleList({ games }) {
     <div id="wordleList-app" className={`nightMode-${nightMode}`}>
       <DragLayer />
       <div id="wordleList-appContents">
-        {infoOpen && <InfoModal
-          onClose={() => closeModal()}
+        {infoOpen && <InfoModal onClose={() => closeInfoModal()} />}
+        {optionsOpen && <OptionsModal
+          onClose={() => closeOptionsModal()}
           onChangeNightMode={setNightMode}
           nightMode={nightMode}
           openInTab={openInTab}
@@ -167,7 +181,8 @@ function WordleList({ games }) {
         />}
         <div className="wordleList f-col" >
           <Header
-            openInfo={() => openModal()}
+            openInfo={() => openInfoModal()}
+            openOptions={() => openOptionsModal()}
           />
           {favoritesList}
           <div className="nonFavComponents f-col">

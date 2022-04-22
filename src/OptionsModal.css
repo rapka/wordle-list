@@ -1,0 +1,99 @@
+.optionsModal a {
+	color: var(--text-color);
+}
+
+.optionsModal a:hover {
+	text-decoration-thickness: 3px;
+}
+
+.optionsModal-desc {
+	font-size: 1.25rem;
+	padding: 1rem 0;
+	text-align: center;
+}
+
+.optionsModal-credits {
+	opacity: 0.8;
+}
+
+.optionsModal-title {
+	font-size: 2rem;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.optionsModal-optionTitle {
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.optionsModal input {
+	display: none;
+}
+
+.optionsModal-deleteContainer {
+	margin-top: 8px;
+}
+
+.optionsModal-deleteButton {
+	background-color: var(--darkenedRed);
+}
+
+.optionsModal-deleteButton:hover {
+	background-color: var(--red);
+}
+
+.optionsModal-nevermind {
+	background-color: var(--darkenedYellow);
+}
+
+.optionsModal-nevermind:hover {
+	background-color: var(--yellow);
+}
+
+.optionsModal button {
+	border: 0;
+	font-size: 1.5rem;
+	padding: 4px 8px;
+	margin: 6px;
+}
+
+.optionsModal button,
+.optionsModal input+label {
+	color: var(--tile-text-color);
+	border-radius: 4px;
+	cursor: pointer;
+	margin: 4px;
+}
+
+.optionsModal input+label {
+	background-color: var(--darkenedYellow);
+	padding: 4px;
+}
+
+.optionsModal input+label:hover {
+	background-color: var(--yellow);
+}
+
+.optionsModal input:checked+label {
+	background-color: var(--darkenedGreen);
+}
+
+.optionsModal input:checked+label:hover {
+	background-color: var(--green);
+}
+
+.optionsModal-optionRow {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 10px 0;
+	width: 100%;
+	max-width: 80%;
+}
+
+.optionsModal-optionRowContents {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}

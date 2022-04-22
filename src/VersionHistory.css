@@ -1,0 +1,32 @@
+.versionHistory {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.versionHistory-list {
+	display: flex;
+	flex-direction: column-reverse;
+	text-align: left;
+	font-size: 1.5rem;
+}
+
+.versionHistory-button {
+	font-size: 1.25rem;
+	cursor: pointer;
+	text-align: center;
+	color: var(--text-color);
+}
+
+.versionHistory-button:hover {
+	text-decoration: underline;
+	text-decoration-thickness: 3px;
+}
+
+.versionHistory ul {
+	margin: 0.25rem 0;
+}
+
+.versionHistory li {
+	font-size: 1.2rem;
+}

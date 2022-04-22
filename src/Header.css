@@ -9,6 +9,7 @@
 .wordleHeader-titleRow svg {
 	display: block;
 	width: 36px;
+	height: 36px;
 	align-self: center;
 	cursor: pointer;
 }
@@ -40,8 +41,22 @@
 	z-index: 2;
 }
 
-@media (max-width: 400px) {
+.gearIcon {
+	position: absolute;
+	right: 0;
+	z-index: 2;
+}
+
+@media (max-width: 450px) {
+	.wordleHeader-title {
+		font-size: 2.25rem;
+	}
+
   .questionIcon {
   	left: -12px;
+  }
+
+  .gearIcon {
+  	right: -12px;
   }
 }
