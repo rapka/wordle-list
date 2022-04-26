@@ -42,6 +42,12 @@
 		"type": "standard"
 	},
 	{
+		"title": "Hurdle",
+		"description": "5x Wordle, previous solutions become guesses",
+		"url": "https://www.arkadium.com/games/hurdle/",
+		"type": "standard"
+	},
+	{
 		"title": "Queerdle",
 		"description": "Queer themed words **(NSFW)**",
 		"url": "https://queerdle.com/",

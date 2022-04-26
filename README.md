@@ -20,6 +20,7 @@ These games follow the original Wordle rules but add additional words to guess.
 | Sedecordle | 16x Wordle | [PLAY](http://www.sedecordle.com/) | 
 | Sedordle | 16x Wordle (alt. version) | [PLAY](https://sedordle.com/) | 
 | Kilordle | 1000x Wordle | [PLAY](https://jonesnxt.github.io/kilordle/) | 
+| Hurdle | 5x Wordle, previous solutions become guesses | [PLAY](https://www.arkadium.com/games/hurdle/) | 
 
 ## Nonstandard Dictionary Variants
 
