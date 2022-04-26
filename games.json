@@ -75,11 +75,6 @@
 		"url": "https://canucklegame.github.io/canuckle/",
 		"type": "newDictionary"
 	},{
-		"title": "Gordle",
-		"description": "Hockey themed words",
-		"url": "https://gordle.herokuapp.com/",
-		"type": "newDictionary"
-	},{
 		"title": "Lewdle",
 		"description": "Lewd words **(NSFW)** ",
 		"url": "https://www.lewdlegame.com/",
@@ -103,6 +98,12 @@
 		"title": "Airportle",
 		"description": "Guess the airport by the IATA code",
 		"url": "https://airportle.scottscheapflights.com/",
+		"type": "newDictionary"
+	},
+	{
+		"title": "Byrdle",
+		"description": "Choral music themed words",
+		"url": "https://www.byrdle.net",
 		"type": "newDictionary"
 	},{
 		"title": "Scholardle",
@@ -135,9 +136,21 @@
 		"type": "newDictionary"
 	},
 	{
+		"title": "Weezle",
+		"description": "For Weezer fans",
+		"url": "https://weezle.web.app/",
+		"type": "newDictionary"
+	},
+	{
 		"title": "Lordle of the Rings",
 		"description": "For Lord of the Rings fans",
 		"url": "https://digitaltolkien.github.io/vue-wordle/",
+		"type": "newDictionary"
+	},
+	{
+		"title": "Trekle",
+		"description": "For Star Trek fans",
+		"url": "https://treklegame.com/",
 		"type": "newDictionary"
 	},
 	{
@@ -147,9 +160,21 @@
 		"type": "newDictionary"
 	},
 	{
+		"title": "Mickeyrdle",
+		"description": "For Disney fans",
+		"url": "https://mickeyvisit.com/disney-wordle/",
+		"type": "newDictionary"
+	},
+	{
 		"title": "Wordle Peaks",
 		"description": "Missed letters give better hints",
 		"url": "https://vegeta897.github.io/wordle-peaks/",
+		"type": "newDictionary"
+	},
+	{
+		"title": "Lingle",
+		"description": "Wordle with six letter words",
+		"url": "https://www.thewordfinder.com/6-letter-wordle/",
 		"type": "newDictionary"
 	},
 	{
@@ -237,6 +262,12 @@
 		"type": "newGameplay"
 	},
 	{
+		"title": "Moviedle",
+		"description": "Guess the movie based on a sped up version",
+		"url": "https://www.moviedle.app/",
+		"type": "newGameplay"
+	},
+	{
 		"title": "Actorle",
 		"description": "Guess the actor based on their filmopgraphy",
 		"url": "https://actorle.com/",
@@ -277,6 +308,24 @@
 		"description": "Guess the NBA player",
 		"url": "https://poeltl.dunk.town/",
 		"type": "newGameplay"
+	},
+	{
+		"title": "WARdle",
+		"description": "Guess the MLB player",
+		"url": "https://wardle.app/",
+		"type": "newGameplay"
+	},
+	{
+		"title": "Dangle",
+		"description": "Guess the NHL player",
+		"url": "https://www.dangle.games/",
+		"type": "newGameplay"
+	},
+	{
+		"title": "Gordle",
+		"description": "Guess the NHL player (5 letter words only)",
+		"url": "https://gordle.herokuapp.com/",
+		"type": "newDictionary"
 	},
 	{
 		"title": "Subwaydle",

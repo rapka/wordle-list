@@ -2,7 +2,7 @@
 
 **For an interactive app version of this list, [click here](https://rapka.github.io/wordle-list/)!**
 
-A handy compilation of over 50 games based on Josh Wardle's **Wordle**.
+A handy compilation of over 60 games based on Josh Wardle's **Wordle**.
 
 Feel free to open an issue with bugs, suggestions or corrections! See [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
 
@@ -33,20 +33,25 @@ These variants follow normal Wordle rules but use a different word list.
 | Foodle | Food related words | [PLAY](https://food-le.co/) | 
 | Pawrdle | Pet related words | [PLAY](https://www.pawrdle.com/) | 
 | Canuckle | Canada-themed words | [PLAY](https://canucklegame.github.io/canuckle/) | 
-| Gordle | Hockey themed words | [PLAY](https://gordle.herokuapp.com/) | 
 | Lewdle | Lewd words **(NSFW)**  | [PLAY](https://www.lewdlegame.com/) | 
 | Sweardle | Four letter swear words **(NSFW)** | [PLAY](https://sweardle.com/) | 
 | Passwordle | Guess commonly used long passwords | [PLAY](https://passwordle.com/) | 
 | Passwordle (Alt) | Guess commonly used short passwords | [PLAY](https://passwordle.sp8c3.com/) | 
 | Airportle | Guess the airport by the IATA code | [PLAY](https://airportle.scottscheapflights.com/) | 
+| Byrdle | Choral music themed words | [PLAY](https://www.byrdle.net) | 
 | Scholardle | Science and academia jargon | [PLAY](https://www.scholardle.com/) | 
 | Bardle | Shakespearean terminology | [PLAY](https://shakespearegeek.github.io/bardle/) | 
 | BRDL | Four lettter [bird banding codes](https://www.pwrc.usgs.gov/bbl/manual/speclist.cfm) | [PLAY](https://brdl.alex.gd/) | 
 | BTS Wordle | For BTS stans | [PLAY](https://bts-wordle.vercel.app/) | 
 | Taylordle | For Taylor Swift stans | [PLAY](https://www.taylordle.com/) | 
+| Weezle | For Weezer fans | [PLAY](https://weezle.web.app/) | 
 | Lordle of the Rings | For Lord of the Rings fans | [PLAY](https://digitaltolkien.github.io/vue-wordle/) | 
+| Trekle | For Star Trek fans | [PLAY](https://treklegame.com/) | 
 | Star Wordle | For Star Wars fans | [PLAY](https://www.starwordle.com/) | 
+| Mickeyrdle | For Disney fans | [PLAY](https://mickeyvisit.com/disney-wordle/) | 
 | Wordle Peaks | Missed letters give better hints | [PLAY](https://vegeta897.github.io/wordle-peaks/) | 
+| Lingle | Wordle with six letter words | [PLAY](https://www.thewordfinder.com/6-letter-wordle/) | 
+| Gordle | Guess the NHL player (5 letter words only) | [PLAY](https://gordle.herokuapp.com/) | 
 
 ## Nonstandard Gameplay Variants
 
@@ -69,6 +74,7 @@ These games don't follow traditional Wordle rules.
 | Heardle | Guess the song based on audio snippets | [PLAY](https://www.heardle.app/) | 
 | Sonic Heardle | Heardle, except only Sonic the Hedgehog music | [PLAY](https://sonic-heardle.glitch.me/) | 
 | Framed | Guess the movie based on screenshots | [PLAY](https://framed.wtf/) | 
+| Moviedle | Guess the movie based on a sped up version | [PLAY](https://www.moviedle.app/) | 
 | Actorle | Guess the actor based on their filmopgraphy | [PLAY](https://actorle.com/) | 
 | Worldle | Guess the country based on its outline | [PLAY](https://worldle.teuteuf.fr/) | 
 | Globle | Guess the country based on distance from other countries | [PLAY](https://globle-game.com/) | 
@@ -76,6 +82,8 @@ These games don't follow traditional Wordle rules.
 | Flaggle (Alt) | Guess the country from the flag | [PLAY](https://flaggle.app/) | 
 | Who Are Ya? | Guess the European football player | [PLAY](https://missing11.com/who-are-ya/) | 
 | POELTL | Guess the NBA player | [PLAY](https://poeltl.dunk.town/) | 
+| WARdle | Guess the MLB player | [PLAY](https://wardle.app/) | 
+| Dangle | Guess the NHL player | [PLAY](https://www.dangle.games/) | 
 | Subwaydle | Guess the NYC Subway trip | [PLAY](https://www.subwaydle.com/) | 
 | Squirdle | Guess the Pokemon based on attributes | [PLAY](https://squirdle.fireblend.com/) | 
 

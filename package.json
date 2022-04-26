@@ -12,7 +12,7 @@
     "createCname": "touch build/CNAME && echo 'wordlebookmarks.app' > build/CNAME",
     "push": "git subtree split --prefix build -b gh-pages && git push -f origin gh-pages:gh-pages && git branch -D gh-pages",
     "deploy": "npm run clean && npm run build && npm run createCname && npm run push",
-    "postversion": "git push && git push --tags"
+    "postversion": "npm run build && git add build/index.html && git commit -m \"update version\" && git push && git push --tags"
   },
   "repository": {
     "type": "git",
