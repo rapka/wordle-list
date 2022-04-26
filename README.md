@@ -68,6 +68,7 @@ These games don't follow traditional Wordle rules.
 | Heardle | Guess the song based on audio snippets | [PLAY](https://www.heardle.app/) | 
 | Sonic Heardle | Heardle, except only Sonic the Hedgehog music | [PLAY](https://sonic-heardle.glitch.me/) | 
 | Framed | Guess the movie based on screenshots | [PLAY](https://framed.wtf/) | 
+| Actorle | Guess the actor based on their filmopgraphy | [PLAY](https://actorle.com/) | 
 | Worldle | Guess the country based on its outline | [PLAY](https://worldle.teuteuf.fr/) | 
 | Globle | Guess the country based on distance from other countries | [PLAY](https://globle-game.com/) | 
 | Flaggle | Guess the flag based on matching colors | [PLAY](https://ducc.pythonanywhere.com/flaggle/) | 

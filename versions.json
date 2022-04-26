@@ -25,5 +25,11 @@
 			"Info and Options are now separate popups",
 			"Update history is now shown in info"
 		]
+	},
+	{
+		"version": "1.1.1",
+		"notes": [
+			"Added listing for 'Actorle'"
+		]
 	}
 ]

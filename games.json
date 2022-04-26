@@ -231,6 +231,12 @@
 		"type": "newGameplay"
 	},
 	{
+		"title": "Actorle",
+		"description": "Guess the actor based on their filmopgraphy",
+		"url": "https://actorle.com/",
+		"type": "newGameplay"
+	},
+	{
 		"title": "Worldle",
 		"description": "Guess the country based on its outline",
 		"url": "https://worldle.teuteuf.fr/",
