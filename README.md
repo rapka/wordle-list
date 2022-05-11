@@ -70,6 +70,9 @@ These games don't follow traditional Wordle rules.
 | Squardle | 2D Wordle in a crossword configuration | [PLAY](https://fubargames.se/squardle/) | 
 | Waffle | Swap letters in a crossword configuration | [PLAY](https://wafflegame.net/) | 
 | Absurdle | Secret word changes to avoid your guesses | [PLAY](https://qntm.org/files/absurdle/absurdle.html) | 
+| Fibble | One letter per guess is evaluated wrong | [PLAY](https://fibble.xyz/) | 
+| Warmle | Yellow letter are near you guess alphabetically | [PLAY](https://warmle.org/) | 
+| Xordle | Two unique secret words on one board | [PLAY](https://xordle.xyz/) | 
 | Crosswordle | Reverse engineer the guess from the final word | [PLAY](https://crosswordle.vercel.app/) | 
 | Heardle | Guess the song based on audio snippets | [PLAY](https://www.heardle.app/) | 
 | Sonic Heardle | Heardle, except only Sonic the Hedgehog music | [PLAY](https://sonic-heardle.glitch.me/) | 

@@ -65,7 +65,7 @@ const plugins = [
   commonjs(),
   nodePolyfills(),
   html({
-    title: 'Wordle Bookmark App',
+    title: 'Wordle Bookmarks',
     template: rollupTemplate,
     meta: [
       {

@@ -238,6 +238,24 @@
 		"type": "newGameplay"
 	},
 	{
+		"title": "Fibble",
+		"description": "One letter per guess is evaluated wrong",
+		"url": "https://fibble.xyz/",
+		"type": "newGameplay"
+	},
+	{
+		"title": "Warmle",
+		"description": "Yellow letter are near you guess alphabetically",
+		"url": "https://warmle.org/",
+		"type": "newGameplay"
+	},
+	{
+		"title": "Xordle",
+		"description": "Two unique secret words on one board",
+		"url": "https://xordle.xyz/",
+		"type": "newGameplay"
+	},
+	{
 		"title": "Crosswordle",
 		"description": "Reverse engineer the guess from the final word",
 		"url": "https://crosswordle.vercel.app/",

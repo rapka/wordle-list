@@ -14,7 +14,7 @@ function Header({ openInfo, openOptions }) {
       <div className="wordleHeader-titleRow">
           <QuestionMark className="questionIcon" onClick={openInfo} />
           <Gear className="gearIcon" onClick={openOptions} />
-          <div className="wordleHeader-title" aria-label="Wordle Bookmark App"><div className="firstLetter">Wordle</div>&nbsp;<div className="firstLetter">Bookmarks</div></div>
+          <div className="wordleHeader-title" aria-label="Wordle Bookmarks"><div className="firstLetter">Wordle</div>&nbsp;<div className="firstLetter">Bookmarks</div></div>
       </div>
       <div className="wordleHeader-desc">A simple app for finding all your daily Wordle games.</div>
     </header>
