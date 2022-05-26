@@ -49,5 +49,11 @@
 		"notes": [
 			"Added listings for 'Fibble', 'Warmle', and 'Xordle'"
 		]
+	},
+	{
+		"version": "1.1.5",
+		"notes": [
+			"Added listing for 'Posterdle'"
+		]
 	}
 ]

@@ -286,6 +286,12 @@
 		"type": "newGameplay"
 	},
 	{
+		"title": "Posterdle",
+		"description": "Guess the movie based on its poster",
+		"url": "https://www.posterdle.com/",
+		"type": "newGameplay"
+	},
+	{
 		"title": "Actorle",
 		"description": "Guess the actor based on their filmopgraphy",
 		"url": "https://actorle.com/",
