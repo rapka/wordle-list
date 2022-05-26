@@ -91,7 +91,7 @@ function WordleList({ games }) {
 
   const removeFav = (title) => {
     const newFavs = cloneDeep(favorites);
-    newFavs.splice(newFavs.indexOf(title));
+    newFavs.splice(newFavs.indexOf(title), 1);
 
     window.localStorage.setItem('wordleList-favorites', JSON.stringify(newFavs));
     setFavorites(newFavs);
