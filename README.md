@@ -2,7 +2,7 @@
 
 **For an interactive app version of this list, [click here](https://rapka.github.io/wordle-list/)!**
 
-A handy compilation of over 60 games based on Josh Wardle's **Wordle**.
+A handy compilation of over 65 games based on Josh Wardle's **Wordle**.
 
 Feel free to open an issue with bugs, suggestions or corrections! See [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
 
@@ -76,6 +76,7 @@ These games don't follow traditional Wordle rules.
 | Crosswordle | Reverse engineer the guess from the final word | [PLAY](https://crosswordle.vercel.app/) | 
 | Heardle | Guess the song based on audio snippets | [PLAY](https://www.heardle.app/) | 
 | Sonic Heardle | Heardle, except only Sonic the Hedgehog music | [PLAY](https://sonic-heardle.glitch.me/) | 
+| Footwork Heardle | Heardle, except for [footwork music](https://en.wikipedia.org/wiki/Footwork_(genre)) | [PLAY](https://footwork-heardle.glitch.me/) | 
 | Framed | Guess the movie based on screenshots | [PLAY](https://framed.wtf/) | 
 | Moviedle | Guess the movie based on a sped up version | [PLAY](https://www.moviedle.app/) | 
 | Posterdle | Guess the movie based on its poster | [PLAY](https://www.posterdle.com/) | 

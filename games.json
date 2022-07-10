@@ -274,6 +274,12 @@
 		"type": "newGameplay"
 	},
 	{
+		"title": "Footwork Heardle",
+		"description": "Heardle, except for [footwork music](https://en.wikipedia.org/wiki/Footwork_(genre))",
+		"url": "https://footwork-heardle.glitch.me/",
+		"type": "newGameplay"
+	},
+	{
 		"title": "Framed",
 		"description": "Guess the movie based on screenshots",
 		"url": "https://framed.wtf/",
