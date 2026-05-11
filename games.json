@@ -380,5 +380,11 @@
 		"description": "Semantle with guess visualization tools",
 		"url": "https://semantle.pimanrul.es/",
 		"type": "semantic"
-	}
+	},
+        {
+            "title": "Flagordle",
+			            "description": "Daily flag guessing game",
+			            "url": "https://flagordle.com/",
+			            "type": "newGameplay"
+		},
 ]
