@@ -316,6 +316,12 @@
 		"type": "newGameplay"
 	},
 	{
+		"title": "Originle",
+		"description": "Guess country from video clues",
+		"url": "https://originle.app/",
+		"type": "newGameplay"
+	},
+	{
 		"title": "Flaggle",
 		"description": "Guess the flag based on matching colors",
 		"url": "https://ducc.pythonanywhere.com/flaggle/",
