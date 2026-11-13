@@ -83,6 +83,7 @@ These games don't follow traditional Wordle rules.
 | Actorle | Guess the actor based on their filmopgraphy | [PLAY](https://actorle.com/) | 
 | Worldle | Guess the country based on its outline | [PLAY](https://worldle.teuteuf.fr/) | 
 | Globle | Guess the country based on distance from other countries | [PLAY](https://globle-game.com/) | 
+| Originle | Guess country from video clues | [PLAY](https://originle.app/) | 
 | Flaggle | Guess the flag based on matching colors | [PLAY](https://ducc.pythonanywhere.com/flaggle/) | 
 | Flaggle (Alt) | Guess the country from the flag | [PLAY](https://flaggle.app/) | 
 | Who Are Ya? | Guess the European football player | [PLAY](https://missing11.com/who-are-ya/) | 
